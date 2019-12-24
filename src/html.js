@@ -22,7 +22,7 @@ export default function HTML(props) {
         />
         {props.postBodyComponents}
       </body>
-      <script src="https://kit.fontawesome.com/96c16da0d2.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/96c16da0d2.js" crossOrigin="anonymous"></script>
     </html>
   )
 }

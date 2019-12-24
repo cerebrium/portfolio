@@ -24,7 +24,6 @@ function SEO({ description, lang, meta, title }) {
 
   return (
     <Helmet
-      script={`<script src="https://kit.fontawesome.com/96c16da0d2.js" crossorigin="anonymous"></script>`}
       meta={[
         {
           name: `twitter:card`,

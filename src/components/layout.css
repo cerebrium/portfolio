@@ -631,6 +631,7 @@ pre tt:after {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+  margin: 2%;
 }
 
 .headerClass {
@@ -667,10 +668,10 @@ pre tt:after {
 
 .spaceMePleaseTop {
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 5%;
+  align-items: center;
+  justify-content: center;
+  margin: auto 5%;
+  text-align: justify;
 }
 
 #topFile {
@@ -693,11 +694,113 @@ pre tt:after {
   margin: 1%;
 }
 
+.spaceMePleaseTopCurr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 5%;
+  text-align: justify;
+}
 
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 600px) {
   html {
-    font-size: 100%;
+    font-size: 80%;
   }
+
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  .fab {
+    font-size: 3em;
+    color: #000;
+  }
+  
+  .fas {
+    font-size: 3em;
+    color: #000;
+  }
+  
+  .footerClass {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 5%;
+  }
+  
+  .headerClass {
+    text-align: center;
+    margin: 2%;
+  }
+  
+  .projectSpacing {
+    display: inline-block;
+  }
+  
+  .mainAppDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spaceMePlease {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5%;
+  }
+  
+  .spaceTheText {
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .sideText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .spaceMePleaseTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 5%;
+    text-align: justify;
+  }
+
+  .spaceMePleaseTopCurr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 5%;
+    text-align: justify;
+    margin-top: 5%;
+  }
+  
+  #topFile {
+    font-size: 2em;
+    margin: 1%;
+  }
+  
+  #topGithub {
+    font-size: 2em;
+    margin: 1%;
+  }
+  
+  #topReact {
+    font-size: 2em;
+    margin: 1%;
+  }
+  
+  #topLinkedin{
+    font-size: 2em;
+    margin: 1%;
+  }
+
 }
 
 

@@ -5,9 +5,9 @@ import Img from "gatsby-image"
 const DogProject = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "dogApp.png" }) {
+      fileName: file(relativePath: { eq: "dogApp.png" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid(maxWidth: 500, maxHeight: 300) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -15,8 +15,8 @@ const DogProject = () => {
     }
   `)
 
-  return (<div style={{ width: '70vh', margin: '2%' }}>
-      <a href="https://sleepy-tor-36924.herokuapp.com/" target="_blank"><Img fluid={data.placeholderImage.childImageSharp.fluid} /></a>
+  return (<div style={{ width: '70vh', margin: '2%', objectFit: 'cover' }}>
+      <a href="https://sleepy-tor-36924.herokuapp.com/" target="_blank" rel="noopener noreferrer"><Img fluid={data.fileName.childImageSharp.fluid} alt="../images/dogApp.png"/></a>
   </div> )
 }
 
