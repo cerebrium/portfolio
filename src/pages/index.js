@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -36,10 +36,6 @@ const IndexPage = () => (
         <h4 className='spaceTheText'>The world needs a way for people to preview how they would look with a potential dog they want to adopt!</h4>
       </div>
     </div>
-    <div className='spaceMePlease'>
-
-    </div>
-
   </Layout>
 )
 
