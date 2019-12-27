@@ -43,7 +43,7 @@ const SecondPage = () => {
           {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
           {status === "ERROR" && <p>Ooops! There was an error.</p>}
         </form>
-      <button className='buttonSpacing'><Link to="/" className='linkStyles'>Go back to the homepage</Link></button>
+      <button className='buttonSpacingTwo'><Link to="/" className='linkStylesTwo'>Go back to the homepage</Link></button>
     </div>
   )
 }
