@@ -15,7 +15,7 @@ const DogProject = () => {
     }
   `)
 
-  return (<div style={{ width: '70vh', margin: '2%', objectFit: 'cover' }}>
+  return (<div className='imageStyler'>
       <a href="https://sleepy-tor-36924.herokuapp.com/" target="_blank" rel="noopener noreferrer"><Img fluid={data.fileName.childImageSharp.fluid} alt="../images/dogApp.png"/></a>
   </div> )
 }

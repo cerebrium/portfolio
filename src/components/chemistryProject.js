@@ -15,7 +15,7 @@ const ChemistryProject = () => {
     }
   `)
 
-  return (<div style={{ width: '70vh', margin: '2%', objectFit: 'cover'}}>
+  return (<div className='imageStyler'>
       <a href="https://cerebrium.github.io/chemGamey/" target="_blank" rel="noopener noreferrer"><Img fluid={data.fileName.childImageSharp.fluid} alt="../images/chemistry-game.png"/></a>
   </div> )
 }

@@ -617,9 +617,47 @@ pre tt:after {
 }
 
 /* ***************************** MY STYLES ********************************* */
+
+.contactPage {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  color: rgb(83, 81, 81);
+}
+
+.myContactForm{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  color: rgb(83, 81, 81);
+}
+
+.linkStyles {
+  text-decoration: none;
+  color: rgb(83, 81, 81);
+}
+
+.buttonSpacing{
+  margin-top: 8%;
+}
+
+/* ***************************** End Of CONTACT PAGE ********************************* */
+
+.indexButton {
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
 .fab {
   font-size: 3em;
   color: rgb(83, 81, 81);
+}
+
+.imageStyler {
+  width: 70vh;
+  margin: 2%;
 }
 
 .overallDiv {
@@ -738,6 +776,11 @@ pre tt:after {
     top: 4%;
     color: rgb(83, 81, 81);
   }
+
+  .imageStyler {
+    width: 85vw;
+    margin: 2%;
+  }
   
   #sun {
     font-size: 1.3em;
@@ -772,10 +815,6 @@ pre tt:after {
     margin: 2%;
   }
   
-  .projectSpacing {
-    display: inline-block;
-  }
-  
   .mainAppDiv {
     display: flex;
     flex-direction: column;
@@ -786,8 +825,11 @@ pre tt:after {
   
   .spaceMePlease {
     display: flex;
-    justify-content: space-evenly;
-    margin: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 3%;
     color: rgb(83, 81, 81);
   }
   
@@ -797,10 +839,6 @@ pre tt:after {
   }
   
   .sideText {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     color: rgb(83, 81, 81);
   }
   
