@@ -764,19 +764,47 @@ pre tt:after {
   font-size: 1.3em;
 }
 
+/* ***************************** MOBILE STYLING ********************************* */
 
 @media only screen and (max-width: 850px) {
   html {
     font-size: 80%;
   }
-
+  
+  .contactPage {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    color: rgb(83, 81, 81);
+  }
+  
+  .myContactForm{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    color: rgb(83, 81, 81);
+  }
+  
+  .linkStyles {
+    text-decoration: none;
+    color: rgb(83, 81, 81);
+  }
+  
+  .buttonSpacing{
+    margin-top: 15%;
+  }
+  
+  /* ***************************** End Of CONTACT PAGE ********************************* */
+  
   .headerClassSun {
     position: absolute;
     right: 2%;
-    top: 4%;
+    top: 7%;
     color: rgb(83, 81, 81);
   }
-
+  
   .imageStyler {
     width: 85vw;
     margin: 2%;
