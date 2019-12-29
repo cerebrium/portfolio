@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
         <a href="https://reactresources.com/" title='Link to react resources' target="_blank" rel="noopener noreferrer"><i className="fab fa-react" id='topReact'></i></a> {' '}
         <a href="https://www.linkedin.com/in/nicholasshankland/" title='Link to my LinkIn page' target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin" id='topLinkedin'></i></a> {' '}
         <a href={Resume} title='My resume' target="_blank" rel="noopener noreferrer"><i className="fas fa-file" id='topFile'></i></a><br />
-        <button className='indexButton'><Link to='/page-2/' className='linkStyles'>Contact Me!</Link></button>
+        <button className='indexButton'><Link to='/page-2/' myprop={modeToggle} className='linkStyles'>Contact Me!</Link></button>
       </div>
       <main>
         {children}
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 export default Layout
