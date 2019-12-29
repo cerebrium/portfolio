@@ -636,10 +636,21 @@ pre tt:after {
 
 .linkStyles {
   text-decoration: none;
+  color: white;
+}
+
+.linkStylesTwo {
+  text-decoration: none;
   color: rgb(83, 81, 81);
 }
 
 .buttonSpacing{
+  margin-top: 8%;
+  background-color: rgb(83, 81, 81);
+  border: solid 1px rgb(83, 81, 81);
+}
+
+.buttonSpacingTwo{
   margin-top: 8%;
 }
 
@@ -648,6 +659,8 @@ pre tt:after {
 .indexButton {
   margin-top: 2%;
   margin-bottom: 3%;
+  background-color: rgb(83, 81, 81);
+  border: solid 1px rgb(83, 81, 81);
 }
 
 .fab {
@@ -787,14 +800,20 @@ pre tt:after {
     color: rgb(83, 81, 81);
   }
   
-  .linkStyles {
-    text-decoration: none;
-    color: rgb(83, 81, 81);
-  }
-  
-  .buttonSpacing{
-    margin-top: 15%;
-  }
+.linkStyles {
+  text-decoration: none;
+  color: white;
+}
+
+.linkStylesTwo {
+  text-decoration: none;
+  color: rgb(83, 81, 81);
+}
+
+.buttonSpacingTwo{
+  position: absolute;
+  bottom: 5%;
+}
   
   /* ***************************** End Of CONTACT PAGE ********************************* */
   

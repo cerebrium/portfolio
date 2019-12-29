@@ -4,10 +4,12 @@ import '../components/layout.css'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import propTypes from "prop-types"
 
 const SecondPage = () => {
   const [status, setStatus] = useState('');
 
+  console.log(propTypes)
 
   const submitForm = (ev) => {
     ev.preventDefault();
@@ -28,7 +30,6 @@ const SecondPage = () => {
     xhr.send(data);
   }
 
-
   return (
     <div className='contactPage'>
       <h1>Leave Me A Message!</h1>
@@ -43,7 +44,7 @@ const SecondPage = () => {
           {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
           {status === "ERROR" && <p>Ooops! There was an error.</p>}
         </form>
-      <button className='buttonSpacing'><Link to="/" className='linkStyles'>Go back to the homepage</Link></button>
+      <button className='buttonSpacingTwo'><Link to="/" className='linkStylesTwo'>Go back to the homepage</Link></button>
     </div>
   )
 }
