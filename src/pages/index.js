@@ -14,10 +14,10 @@ const IndexPage = () => (
     <h3 className='spaceMePleaseTopCurr'>Current Projects</h3>
 
     <div className='spaceMePlease'>
-          <TwitterProject />
+        <DogProject />
       <div className='sideText spaceTheText'>
-        <h1>TwitterCheck</h1>
-        <h4 className='spaceTheText'>Ever wonder where your favorite tweeter is getting their information? use this to fact check their tweets!</h4>
+        <h1>Rent-A-Dog</h1>
+        <h4 className='spaceTheText'>The world needs a way for people to preview how they would look with a potential dog they want to adopt.</h4>
       </div>
     </div>
 
@@ -25,17 +25,18 @@ const IndexPage = () => (
         <ChemistryProject />
       <div className='sideText spaceTheText'>
         <h1>Travel Foodie</h1>
-        <h4 className='spaceTheText'>My travel blog. This uses gatsby with a node backend and auth0.</h4>
+        <h4 className='spaceTheText'>My travel blog. This uses gatsby with a node backend and auth0. Talks about Asia and Eastern Washington.</h4>
       </div>
     </div>
 
     <div className='spaceMePlease'>
-        <DogProject />
+          <TwitterProject />
       <div className='sideText spaceTheText'>
-        <h1>Rent-A-Dog</h1>
-        <h4 className='spaceTheText'>The world needs a way for people to preview how they would look with a potential dog they want to adopt!</h4>
+        <h1>TwitterCheck</h1>
+        <h4 className='spaceTheText'>Ever wonder where your favorite tweeter is getting their information? use this to fact check their tweets.</h4>
       </div>
     </div>
+
   </Layout>
 )
 
