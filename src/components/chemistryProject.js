@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const ChemistryProject = () => {
   const data = useStaticQuery(graphql`
     query {
-      fileName: file(relativePath: { eq: "chemistry-game.png" }) {
+      fileName: file(relativePath: { eq: "travelFoodie.png" }) {
         childImageSharp {
           fluid(maxWidth: 500, maxHeight: 300) {
             ...GatsbyImageSharpFluid
@@ -16,7 +16,7 @@ const ChemistryProject = () => {
   `)
 
   return (<div className='imageStyler'>
-      <a href="https://cerebrium.github.io/chemGamey/" target="_blank" rel="noopener noreferrer"><Img fluid={data.fileName.childImageSharp.fluid} alt="../images/chemistry-game.png"/></a>
+      <a href="https://travelfoodie.herokuapp.com/" target="_blank" rel="noopener noreferrer"><Img fluid={data.fileName.childImageSharp.fluid} alt="../images/travelFoodie.png"/></a>
   </div> )
 }
 

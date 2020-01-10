@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import TwitterProject from "../components/twitterProject"
 import ChemistryProject from "../components/chemistryProject"
 import DogProject from "../components/dogProject"
-import { Link } from "gatsby"
 
 const IndexPage = () => (
   <Layout>
@@ -25,8 +24,8 @@ const IndexPage = () => (
     <div className='spaceMePlease'>
         <ChemistryProject />
       <div className='sideText spaceTheText'>
-        <h1>WaterMaker</h1>
-        <h4 className='spaceTheText'>Ever wanted to make chemistry molecules? This is your chance to make any organic chemistry molecule!</h4>
+        <h1>Travel Foodie</h1>
+        <h4 className='spaceTheText'>My travel blog. This uses gatsby with a node backend and auth0.</h4>
       </div>
     </div>
 
