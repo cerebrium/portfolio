@@ -5,6 +5,7 @@ import { Link } from 'gatsby'
 
 import Header from "./header"
 import "./layout.css"
+// a comment for deployment
 
 const Layout = ({ children }) => {
   const [modeToggle, setModeToggle ] = useState('lightOverallDiv');
