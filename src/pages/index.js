@@ -32,7 +32,7 @@ const IndexPage = () => (
     <div className='spaceMePlease'>
           <TwitterProject />
       <div className='sideText spaceTheText'>
-        <h1>TwitterCheck</h1>
+        <h1>Todo List</h1>
         <h4 className='spaceTheText'>This it my todo list! It uses react and mongoDB and Node on the backend. The Auth borrows from General Assembly.</h4>
       </div>
     </div>
