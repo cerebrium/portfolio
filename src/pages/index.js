@@ -33,7 +33,7 @@ const IndexPage = () => (
           <TwitterProject />
       <div className='sideText spaceTheText'>
         <h1>TwitterCheck</h1>
-        <h4 className='spaceTheText'>Ever wonder where your favorite tweeter is getting their information? use this to fact check their tweets.</h4>
+        <h4 className='spaceTheText'>This it my todo list! It uses react and mongoDB and Node on the backend. The Auth borrows from General Assembly.</h4>
       </div>
     </div>
 

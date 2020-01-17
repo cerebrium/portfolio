@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const TwitterProject = () => {
     const data = useStaticQuery(graphql`
       query {
-        fileName: file(relativePath: { eq: "twitterApp.png" }) {
+        fileName: file(relativePath: { eq: "todolist.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 500, maxHeight: 300) {
               ...GatsbyImageSharpFluid
@@ -15,7 +15,7 @@ const TwitterProject = () => {
       }
     `)
     return (<div className='imageStyler'>
-      <a href="https://mysterious-chamber-57760.herokuapp.com/" target="_blank" rel="noopener noreferrer"><Img fluid={data.fileName.childImageSharp.fluid} alt="../images/twitterApp.png"/></a>
+      <a href="https://todoleest.herokuapp.com/" target="_blank" rel="noopener noreferrer"><Img fluid={data.fileName.childImageSharp.fluid} alt="../images/twitterApp.png"/></a>
     </div>
     )
 }
