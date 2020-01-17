@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
     }
   }
 
+  // the return part
   return (
     <div className={`${modeToggle}`}>
       <div className='headerClassSun'>

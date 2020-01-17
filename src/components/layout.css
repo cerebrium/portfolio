@@ -726,6 +726,7 @@ pre tt:after {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 55vw;
   color: rgb(83, 81, 81);
 }
 
