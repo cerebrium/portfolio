@@ -33,7 +33,7 @@ const IndexPage = () => (
           <TwitterProject />
       <div className='sideText spaceTheText'>
         <h1>Todo List</h1>
-        <h4 className='spaceTheText'>This it my todo list!  It uses react.js and mongoDB and Node on the backend. The Authentication borrows from GA.</h4>
+        <h4 className='spaceTheText'>This it my todo list!  It uses react.js and mongoDB and Node on the backend. The Authentication borrows from GA. This app now uses googles speech-to-text api and therefore now only works on chrome. </h4>
       </div>
     </div>
 
