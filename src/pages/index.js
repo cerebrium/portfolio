@@ -33,7 +33,7 @@ const IndexPage = () => (
           <TwitterProject />
       <div className='sideText spaceTheText'>
         <h1>Todo List</h1>
-        <h4 className='spaceTheText'>Basic to do list that uses react.js and mongoDB and Node on the backend. This app now uses googles speech-to-text api and therefore now only works on chrome. </h4>
+        <h4 className='spaceTheText'>Basic to do list that uses react.js, mongoDB and Node on the backend. This app now uses googles speech-to-text api and therefore now only works on chrome. </h4>
       </div>
     </div>
 
