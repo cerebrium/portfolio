@@ -17,7 +17,7 @@ const IndexPage = () => (
         <DogProject />
       <div className='sideText spaceTheText'>
         <h1>Rent-A-Dog</h1>
-        <h4 className='spaceTheText'>The world needs a way for people to preview how they would look with a potential dog they want to adopt.</h4>
+        <h4 className='spaceTheText'>Uses React and a node backend to link up users with adoptable dogs from a variety of agencies through petfinders api.</h4>
       </div>
     </div>
 
@@ -25,7 +25,7 @@ const IndexPage = () => (
         <ChemistryProject />
       <div className='sideText spaceTheText'>
         <h1>Travel Foodie</h1>
-        <h4 className='spaceTheText'>My travel blog. This uses gatsby with a node backend and auth0. Talks about Asia and Eastern Washington.</h4>
+        <h4 className='spaceTheText'>My travel blog. This uses gatsby with a node backend and auth0. Talks about South East Asia and Eastern Washington, constantly being updated with new content as I travel!</h4>
       </div>
     </div>
 
@@ -33,7 +33,7 @@ const IndexPage = () => (
           <TwitterProject />
       <div className='sideText spaceTheText'>
         <h1>Todo List</h1>
-        <h4 className='spaceTheText'>This it my todo list!  It uses react.js and mongoDB and Node on the backend. The Authentication borrows from GA. This app now uses googles speech-to-text api and therefore now only works on chrome. </h4>
+        <h4 className='spaceTheText'>Basic to do list that uses react.js and mongoDB and Node on the backend. This app now uses googles speech-to-text api and therefore now only works on chrome. </h4>
       </div>
     </div>
 
