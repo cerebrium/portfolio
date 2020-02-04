@@ -795,7 +795,7 @@ pre tt:after {
  0% {
    box-shadow: 10px 10px 5px rgb(255, 255, 255);
  }
- 5% {
+ 3% {
    box-shadow: 10px 10px 5px grey;
  }
  100% {
