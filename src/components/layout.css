@@ -781,6 +781,10 @@ pre tt:after {
   font-size: 1.3em;
 }
 
+.imagePicture:hover {
+  box-shadow: 10px 10px 5px grey;
+}
+
 /* ***************************** MOBILE STYLING ********************************* */
 
 @media only screen and (max-width: 850px) {
@@ -839,10 +843,6 @@ pre tt:after {
   .imageStyler {
     width: 85vw;
     margin: 2%;
-  }
-
-  .imagePicture:hover {
-    box-shadow: 10px 10px 5px grey;
   }
   
   #sun {

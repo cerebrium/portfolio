@@ -19,7 +19,6 @@ const IndexPage = () => (
         <h1>Rent-A-Dog</h1>
         <h4 className='spaceTheText'>Uses React and a node backend to link up users with adoptable dogs from a variety of agencies through petfinders api.</h4>
       </div>
-    <hr />
     </div>
     <div className='spaceMePlease'>
         <ChemistryProject />
@@ -27,7 +26,6 @@ const IndexPage = () => (
         <h1>Travel Foodie</h1>
         <h4 className='spaceTheText'>My travel blog. This uses gatsby with a node backend and auth0. Talks about South East Asia and Eastern Washington, constantly being updated with new content as I travel!</h4>
       </div>
-      <hr />
     </div>
 
     
