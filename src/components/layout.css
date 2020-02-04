@@ -786,7 +786,8 @@ pre tt:after {
 }
 
 .indexButton:hover {
-  background-color: orangered;
+  background-color: rgb(184, 98, 67);
+  opacity: .8;
 }
 
 /* ***************************** MOBILE STYLING ********************************* */
