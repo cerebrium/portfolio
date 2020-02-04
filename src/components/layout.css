@@ -806,9 +806,17 @@ pre tt:after {
   color: white;
 }
 
+.linkStyles:hover {
+  background-color: orangered;
+}
+
 .linkStylesTwo {
   text-decoration: none;
   color: rgb(83, 81, 81);
+}
+
+.linkStylesTwo:hover {
+  background-color: orangered;
 }
 
 .buttonSpacingTwo{
