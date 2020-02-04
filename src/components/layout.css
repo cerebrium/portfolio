@@ -783,7 +783,7 @@ pre tt:after {
 
 .imagePicture:hover {
   animation-name: shadoweffect;
-  animation-duration: 1s;
+  animation-duration: 10s;
 }
 
 .indexButton:hover {
@@ -794,7 +794,6 @@ pre tt:after {
 @keyframes shadoweffect {
  0% {
    box-shadow: 10px 10px 5px grey;
-   opacity: 0;
  }
  100% {
    box-shadow: 10px 10px 5px grey;
