@@ -793,7 +793,7 @@ pre tt:after {
 
 @keyframes shadoweffect {
  0% {
-   box-shadow: 10px 10px 5px grey;
+   box-shadow: 10px 10px 5px rgb(255, 255, 255);
  }
  100% {
    box-shadow: 10px 10px 5px grey;
