@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
       <div className='headerClassSun'>
         <i onClick={() => handleClick()} className="fas fa-sun" id='sun' title='Toggle between light and dark modes'></i>
       </div>
-      <Header siteTitle={'Nicholas Shankland | Full Stack Developer'} />
+      <Header siteTitle={'Nicholas Shankland | Front End Developer'} />
       <div className='headerClass'>
         <a href='https://github.com/cerebrium' title='Link to my Github' target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square" id='topGithub'></i></a> 
         <a href="https://reactresources.com/" title='Link to react resources' target="_blank" rel="noopener noreferrer"><i className="fab fa-react" id='topReact'></i></a> {' '}
