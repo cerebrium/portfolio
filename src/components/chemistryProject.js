@@ -7,7 +7,7 @@ const ChemistryProject = () => {
     query {
       fileName: file(relativePath: { eq: "travelFoodie.png" }) {
         childImageSharp {
-          fluid(maxWidth: 500, maxHeight: 300) {
+          fluid(maxWidth: 500, maxHeight: 300, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
