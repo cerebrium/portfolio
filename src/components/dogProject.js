@@ -16,7 +16,7 @@ const DogProject = () => {
   `)
 
   return (<div className='imageStyler'>
-      <a href="https://sleepy-tor-36924.herokuapp.com/" target="_blank" rel="noopener noreferrer"><Img fluid={data.fileName.childImageSharp.fluid} alt="../images/dogApp.png"/></a>
+      <a href="https://sleepy-tor-36924.herokuapp.com/" target="_blank" rel="noopener noreferrer"><Img fluid={data.fileName.childImageSharp.fluid} alt="../images/dogApp.png" className='imagePicture'/></a>
   </div> )
 }
 
