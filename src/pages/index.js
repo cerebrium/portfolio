@@ -9,7 +9,8 @@ import DogProject from "../components/dogProject"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h4 className='spaceMePleaseTop'>Frontend-focused developer who enjoys using mathematical and programming theory to make code as efficient and fast as possible. My most valuable asset is my work ethic and love of being stuck.  I firmly believe being stuck is the best way to grow as a programmer and reach new heights.  My previous job working in the E.R. honed my ability to convey technical concepts to diverse audiences.  I now leverage this skill set as a developer while working in cross-functional teams.</h4>
+    <hr />
+    {/* <h4 className='spaceMePleaseTop'>Frontend-focused developer who enjoys using mathematical and programming theory to make code as efficient and fast as possible. My most valuable asset is my work ethic and love of being stuck.  I firmly believe being stuck is the best way to grow as a programmer and reach new heights.  My previous job working in the E.R. honed my ability to convey technical concepts to diverse audiences.  I now leverage this skill set as a developer while working in cross-functional teams.</h4> */}
   
     <h3 className='spaceMePleaseTopCurr'>Current Projects</h3>
 

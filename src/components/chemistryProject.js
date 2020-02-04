@@ -16,7 +16,7 @@ const ChemistryProject = () => {
   `)
 
   return (<div className='imageStyler'>
-      <a href="https://travelfoodie.herokuapp.com/" target="_blank" rel="noopener noreferrer"><Img fluid={data.fileName.childImageSharp.fluid} alt="../images/travelFoodie.png"/></a>
+      <a href="https://travelfoodie.herokuapp.com/" target="_blank" rel="noopener noreferrer" className='imagePicture'><Img fluid={data.fileName.childImageSharp.fluid} alt="../images/travelFoodie.png"/></a>
   </div> )
 }
 
