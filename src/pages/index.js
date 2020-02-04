@@ -9,8 +9,7 @@ import DogProject from "../components/dogProject"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <hr />
-    {/* <h4 className='spaceMePleaseTop'>Frontend-focused developer who enjoys using mathematical and programming theory to make code as efficient and fast as possible. My most valuable asset is my work ethic and love of being stuck.  I firmly believe being stuck is the best way to grow as a programmer and reach new heights.  My previous job working in the E.R. honed my ability to convey technical concepts to diverse audiences.  I now leverage this skill set as a developer while working in cross-functional teams.</h4> */}
+    <h4 className='spaceMePleaseTop'>Frontend-focused developer who enjoys using mathematical and programming theory to make code as efficient and fast as possible. My most valuable asset is my work ethic and love of being stuck.  I firmly believe being stuck is the best way to grow as a programmer and reach new heights.  My previous job working in the E.R. honed my ability to convey technical concepts to diverse audiences.  I now leverage this skill set as a developer while working in cross-functional teams.</h4>
   
     <h3 className='spaceMePleaseTopCurr'>Current Projects</h3>
 
@@ -20,15 +19,18 @@ const IndexPage = () => (
         <h1>Rent-A-Dog</h1>
         <h4 className='spaceTheText'>Uses React and a node backend to link up users with adoptable dogs from a variety of agencies through petfinders api.</h4>
       </div>
+    <hr />
     </div>
-
     <div className='spaceMePlease'>
         <ChemistryProject />
       <div className='sideText spaceTheText'>
         <h1>Travel Foodie</h1>
         <h4 className='spaceTheText'>My travel blog. This uses gatsby with a node backend and auth0. Talks about South East Asia and Eastern Washington, constantly being updated with new content as I travel!</h4>
       </div>
+      <hr />
     </div>
+
+    
 
     <div className='spaceMePlease'>
           <TwitterProject />
