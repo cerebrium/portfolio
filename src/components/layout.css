@@ -918,6 +918,9 @@ pre tt:after {
 .buttonSpacingTwo{
   position: absolute;
   bottom: 5%;
+  color: rgb(136, 132, 132);
+  background-color: white;
+  border: 1px solid black;
 }
   
   /* ***************************** End Of CONTACT PAGE ********************************* */
@@ -970,7 +973,7 @@ pre tt:after {
     flex-direction: column;
     margin-left: 3%;
     padding-top: 3%;
-    width: 25vw;
+    width: 50vw;
   }
   
   .mainAppDiv {
@@ -1020,23 +1023,28 @@ pre tt:after {
   }
   
   #topFile {
-    font-size: 1em;
-    margin: 1%;
+    font-size: 1.5em;
+    margin-bottom: 2%;
   }
   
   #topGithub {
-    font-size: 1em;
-    margin: 1%;
+    font-size: 1.5em;
+    margin-bottom: 2%;
   }
   
   #topReact {
-    font-size: 1em;
-    margin: 1%;
+    font-size: 1.5em;
+    margin-bottom: 2%;
   }
   
   #topLinkedin{
-    font-size: 1em;
-    margin: 1%;
+    font-size: 1.5em;
+    margin-bottom: 2%;
+  }
+  
+  #topEmail{
+    font-size: 1.5em;
+    margin-bottom: 2%;
   }
 
   .overallDiv {
