@@ -988,11 +988,10 @@ pre tt:after {
   .fab {
     font-size: 1em;
     color: rgb(136, 132, 132);
-
   }
   
   .fas {
-    font-size: 3em;
+    font-size: 1em;
     color: rgb(136, 132, 132);
   }
   
@@ -1085,6 +1084,10 @@ pre tt:after {
     font-size: 1.5em;
     margin-bottom: 2%;
   }
+  
+  #fa-files {
+    font-size: 1em;
+  }
 
   .overallDiv {
     animation-name: changeToDark;
@@ -1096,6 +1099,7 @@ pre tt:after {
     animation-name: changeToWhite;
     animation-duration: .4s;
   }
+
 
   @keyframes changeToWhite {
     0% {
