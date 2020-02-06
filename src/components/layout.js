@@ -18,6 +18,7 @@ import TwitterProject from './twitterProject'
   const [ gate, setGate ] = useState('true')
   const [status, setStatus] = useState('')
   const [ secondPage, setSecondPage ] = useState('contactPage')
+  const [toggleSun, setToggleSun ] = useState('fas fa-moon')
 
   const submitForm = (ev) => {
     ev.preventDefault();
@@ -40,6 +41,7 @@ import TwitterProject from './twitterProject'
 
   function handleClick() {
     if (modeToggle === 'lightOverallDiv') {
+      setToggleSun('fas fa-sun')
       setModeToggle('overallDiv')
       setTitleToggle('titleTextDark')
       setTitleToggleTwo('titleTextTwoDark')
@@ -47,6 +49,7 @@ import TwitterProject from './twitterProject'
       setSpaceMeTop('spaceMePleaseTopCurrDark')
       setSecondPage('contactPageDark')
     } else {
+      setToggleSun('fas fa-moon')
       setModeToggle('lightOverallDiv')
       setTitleToggle('titleText')
       setTitleToggleTwo('titleTextTwo')
@@ -69,7 +72,7 @@ import TwitterProject from './twitterProject'
       <ContextProviderComponent>
       <div className={`${modeToggle}`}>
         <div className='headerClassSun'>
-          <i onClick={() => handleClick()} className="fas fa-sun" id='sun' title='Toggle between light and dark modes'></i>
+          <i onClick={() => handleClick()} className={`${toggleSun}`} id='sun' title='Toggle between light and dark modes'></i>
         </div>
         <div className='headerClass'>
           <div className='spacerDiv'></div>
