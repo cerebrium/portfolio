@@ -693,11 +693,14 @@ pre tt:after {
 }
 
 .overallDiv {
-  background-color: rgb(2, 1, 12);
+  animation-name: changeToDark;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
 }
 
 .lightOverallDiv {
-  background-color: white;
+  animation-name: changeToWhite;
+  animation-duration: .4s;
 }
 
 .fas {
@@ -874,6 +877,42 @@ pre tt:after {
  }
 }
 
+@keyframes changeToWhite {
+  0% {
+    background-color: rgb(2, 1, 12);
+  } 
+  25% {
+    background-color: rgb(53, 53, 53);
+  }
+  50% {
+    background-color: grey;
+  }
+  75% {
+    background-color: rgb(214, 214, 214);
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes changeToDark {
+  0% {
+    background-color: white;
+  } 
+  25% {
+    background-color: rgb(207, 207, 207);
+  }
+  50% {
+    background-color: grey;
+  }
+  75% {
+    background-color: rgb(46, 46, 46);
+  }
+  100% {
+    background-color: rgb(2, 1, 12);
+  }
+}
+
 /* ***************************** MOBILE STYLING ********************************* */
 
 @media only screen and (max-width: 850px) {
@@ -1048,13 +1087,51 @@ pre tt:after {
   }
 
   .overallDiv {
-    background-color: rgb(2, 1, 12);
+    animation-name: changeToDark;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
   }
   
   .lightOverallDiv {
-    background-color: white;
+    animation-name: changeToWhite;
+    animation-duration: .4s;
   }
 
+  @keyframes changeToWhite {
+    0% {
+      background-color: rgb(2, 1, 12);
+    } 
+    25% {
+      background-color: rgb(53, 53, 53);
+    }
+    50% {
+      background-color: grey;
+    }
+    75% {
+      background-color: rgb(214, 214, 214);
+    }
+    100% {
+      background-color: white;
+    }
+  }
+  
+  @keyframes changeToDark {
+    0% {
+      background-color: white;
+    } 
+    25% {
+      background-color: rgb(207, 207, 207);
+    }
+    50% {
+      background-color: grey;
+    }
+    75% {
+      background-color: rgb(46, 46, 46);
+    }
+    100% {
+      background-color: rgb(2, 1, 12);
+    }
+  }
 }
 
 
