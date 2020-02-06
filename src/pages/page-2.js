@@ -1,15 +1,10 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import '../components/layout.css'
-
-import Layout from "../components/layout"
 import SEO from "../components/seo"
-import propTypes from "prop-types"
 
 const SecondPage = () => {
   const [status, setStatus] = useState('');
-
-  console.log(propTypes)
 
   const submitForm = (ev) => {
     ev.preventDefault();

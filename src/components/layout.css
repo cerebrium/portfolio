@@ -623,10 +623,21 @@ pre tt:after {
 
 .contactPage {
   display: flex;
+  height: 100vh;
   align-items: center;
   flex-flow: column;
   justify-content: center;
-  color: rgb(83, 81, 81);
+  color: rgb(136, 132, 132);
+}
+
+.contactPageDark {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  color: rgb(245, 243, 243);
+  background-color: rgb(2, 1, 12);
 }
 
 .myContactForm{
@@ -634,7 +645,7 @@ pre tt:after {
   align-items: center;
   flex-flow: column;
   justify-content: center;
-  color: rgb(83, 81, 81);
+  color: rgb(136, 132, 132);
 }
 
 .linkStyles {
@@ -644,13 +655,17 @@ pre tt:after {
 
 .linkStylesTwo {
   text-decoration: none;
-  color: rgb(83, 81, 81);
+  color: rgb(136, 132, 132);
+}
+
+.subTitleTexts {
+  color: #000;
 }
 
 .buttonSpacing{
   margin-top: 8%;
-  background-color: rgb(83, 81, 81);
-  border: solid 1px rgb(83, 81, 81);
+  background-color: rgb(136, 132, 132);
+  border: solid 1px rgb(136, 132, 132);
 }
 
 .buttonSpacingTwo{
@@ -662,13 +677,14 @@ pre tt:after {
 .indexButton {
   margin-top: 2%;
   margin-bottom: 3%;
-  background-color: rgb(83, 81, 81);
-  border: solid 1px rgb(83, 81, 81);
+  background-color: rgb(136, 132, 132);
+  border: solid 1px rgb(136, 132, 132);
 }
 
 .fab {
   font-size: 3em;
-  color: rgb(83, 81, 81);
+  color: rgb(136, 132, 132);
+  margin-right: 2vw;
 }
 
 .imageStyler {
@@ -677,7 +693,7 @@ pre tt:after {
 }
 
 .overallDiv {
-  background-color: #000;
+  background-color: rgb(2, 1, 12);
 }
 
 .lightOverallDiv {
@@ -686,7 +702,8 @@ pre tt:after {
 
 .fas {
   font-size: 3em;
-  color: rgb(83, 81, 81);
+  color: rgb(136, 132, 132);
+  margin-right: 2vw;
 }
 
 .footerClass {
@@ -694,11 +711,46 @@ pre tt:after {
   justify-content: space-around;
   margin-top: 3%;
   padding-bottom: 1%;
-  color: rgb(83, 81, 81);
+  color: rgb(136, 132, 132);
+}
+
+.subTitleTextDark {
+  color: white;
+}
+
+.titleText {
+  color: black;
+}
+
+.titleTextTwoDark {
+  color: rgb(136, 132, 132);
+  margin-bottom: 1%;
+  text-align: left;
+}
+
+.titleTextTwo {
+  color: rgb(136, 132, 132);
+  margin-bottom: 1%;
+  text-align: left;
+}
+
+.titleTextDark {
+  color: white;
 }
 
 .headerClass {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  /* margin-top: 3%; */
+  width: 25vw;
+}
+
+.spacerDiv {
+  height: 4vh;
+}
+.favicons {
+  display: flex;
 }
 
 .projectSpacing {
@@ -710,14 +762,14 @@ pre tt:after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(83, 81, 81);
+  color: rgb(136, 132, 132);
 }
 
 .spaceMePlease {
   display: flex;
   justify-content: space-evenly;
   margin: 1%;
-  color: rgb(83, 81, 81);
+  color: rgb(136, 132, 132);
 }
 
 .spaceTheText {
@@ -730,7 +782,7 @@ pre tt:after {
   justify-content: center;
   flex-direction: column;
   width: 55vw;
-  color: rgb(83, 81, 81);
+  color: rgb(136, 132, 132);
 }
 
 .spaceMePleaseTop {
@@ -739,27 +791,37 @@ pre tt:after {
   justify-content: center;
   margin: auto 5%;
   text-align: justify;
-  color: rgb(83, 81, 81);
+  color: rgb(136, 132, 132);
+}
+
+.spaceMePleaseTopText {
+  text-align: left;
+  color: rgb(136, 132, 132);
 }
 
 #topFile {
-  font-size: 2em;
-  margin: 1%;
+  font-size: 1.5em;
+  margin-bottom: 2%;
 }
 
 #topGithub {
-  font-size: 2em;
-  margin: 1%;
+  font-size: 1.5em;
+  margin-bottom: 2%;
 }
 
 #topReact {
-  font-size: 2em;
-  margin: 1%;
+  font-size: 1.5em;
+  margin-bottom: 2%;
 }
 
 #topLinkedin{
-  font-size: 2em;
-  margin: 1%;
+  font-size: 1.5em;
+  margin-bottom: 2%;
+}
+
+#topEmail{
+  font-size: 1.5em;
+  margin-bottom: 2%;
 }
 
 .spaceMePleaseTopCurr {
@@ -768,7 +830,16 @@ pre tt:after {
   justify-content: center;
   margin: auto 5%;
   text-align: justify;
-  color: rgb(83, 81, 81);
+  color: black;
+}
+
+.spaceMePleaseTopCurrDark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 5%;
+  text-align: justify;
+  color: white;
 }
 
 .headerClassSun {
@@ -815,7 +886,7 @@ pre tt:after {
     align-items: center;
     flex-flow: column;
     justify-content: center;
-    color: rgb(83, 81, 81);
+    color: rgb(136, 132, 132);
   }
   
   .myContactForm{
@@ -823,7 +894,7 @@ pre tt:after {
     align-items: center;
     flex-flow: column;
     justify-content: center;
-    color: rgb(83, 81, 81);
+    color: rgb(136, 132, 132);
   }
   
 .linkStyles {
@@ -837,7 +908,7 @@ pre tt:after {
 
 .linkStylesTwo {
   text-decoration: none;
-  color: rgb(83, 81, 81);
+  color: rgb(136, 132, 132);
 }
 
 .linkStylesTwo:hover {
@@ -855,7 +926,7 @@ pre tt:after {
     position: absolute;
     right: 2%;
     top: 7%;
-    color: rgb(83, 81, 81);
+    color: rgb(136, 132, 132);
   }
   
   .imageStyler {
@@ -869,17 +940,18 @@ pre tt:after {
   h1 {
     font-size: 1.5em;
     text-align: center;
-    color: rgb(83, 81, 81);
+    color: rgb(136, 132, 132);
   }
   
   .fab {
-    font-size: 3em;
-    color: rgb(83, 81, 81);
+    font-size: 1em;
+    color: rgb(136, 132, 132);
+
   }
   
   .fas {
     font-size: 3em;
-    color: rgb(83, 81, 81);
+    color: rgb(136, 132, 132);
   }
   
   .footerClass {
@@ -888,12 +960,17 @@ pre tt:after {
     align-items: flex-end;
     margin-top: 5%;
     padding-bottom: 2%;
-    color: rgb(83, 81, 81);
+    color: rgb(136, 132, 132);
   }
   
   .headerClass {
-    text-align: center;
-    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 3%;
+    padding-top: 3%;
+    width: 25vw;
   }
   
   .mainAppDiv {
@@ -901,7 +978,7 @@ pre tt:after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(83, 81, 81);
+    color: rgb(136, 132, 132);
   }
   
   .spaceMePlease {
@@ -911,7 +988,7 @@ pre tt:after {
     align-items: center;
     text-align: justify;
     margin: 3%;
-    color: rgb(83, 81, 81);
+    color: rgb(136, 132, 132);
   }
   
   .spaceTheText {
@@ -920,7 +997,7 @@ pre tt:after {
   }
   
   .sideText {
-    color: rgb(83, 81, 81);
+    color: rgb(136, 132, 132);
   }
   
   .spaceMePleaseTop {
@@ -929,7 +1006,7 @@ pre tt:after {
     justify-content: center;
     margin: auto 5%;
     text-align: justify;
-    color: rgb(83, 81, 81);
+    color: rgb(136, 132, 132);
   }
 
   .spaceMePleaseTopCurr {
@@ -939,26 +1016,26 @@ pre tt:after {
     margin: auto 5%;
     text-align: justify;
     margin-top: 5%;
-    color: rgb(83, 81, 81);
+    color: rgb(136, 132, 132);
   }
   
   #topFile {
-    font-size: 2em;
+    font-size: 1em;
     margin: 1%;
   }
   
   #topGithub {
-    font-size: 2em;
+    font-size: 1em;
     margin: 1%;
   }
   
   #topReact {
-    font-size: 2em;
+    font-size: 1em;
     margin: 1%;
   }
   
   #topLinkedin{
-    font-size: 2em;
+    font-size: 1em;
     margin: 1%;
   }
 
