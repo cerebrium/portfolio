@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Resume from '../images/Resume.pdf'
+import Resume from '../images/ResumeHuman.pdf'
 import { Link } from 'gatsby'
 import "./layout.css"
 import { ContextProviderComponent } from './context'
