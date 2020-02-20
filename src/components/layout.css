@@ -933,11 +933,71 @@ pre tt:after {
   width: 80vw;
 }
 
+.loadingOverall {
+  background-color: rgb(2, 1, 12);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  color: orange;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 38% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
 /* ***************************** MOBILE STYLING ********************************* */
 
 @media only screen and (max-width: 850px) {
   html {
     font-size: 80%;
+  }
+
+  .typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    color: orange;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 64% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  .loadingOverall {
+    background-color: rgb(2, 1, 12);
+    height: 100vh;
   }
 
   .headerClass {
@@ -1040,7 +1100,7 @@ pre tt:after {
   .headerClassSun {
     position: absolute;
     right: 2%;
-    top: 7%;
+    top: 2%;
     color: rgb(136, 132, 132);
   }
   

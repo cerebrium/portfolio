@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Resume from '../images/ResumeHuman.pdf'
 import { Link } from 'gatsby'
 import "./layout.css"
@@ -12,10 +12,10 @@ import TwitterProject from './twitterProject'
  export default () => {
   const [ modeToggle, setModeToggle ] = useState('overallDiv')
   const [ titleToggle, setTitleToggle ] = useState('titleText')
-  const [ titleToggleTwo, setTitleToggleTwo ] = useState('titleTextTwo')
-  const [ subTitleText, setSubTitleText ] = useState('subTitleTexts')
-  const [ spaceMeTop, setSpaceMeTop ] = useState('spaceMePleaseTopCurr')
-  const [ gate, setGate ] = useState('true')
+  const [ titleToggleTwo, setTitleToggleTwo ] = useState('titleTextTwoDark')
+  const [ subTitleText, setSubTitleText ] = useState('subTitleTextDark')
+  const [ spaceMeTop, setSpaceMeTop ] = useState('spaceMePleaseTopCurrDark')
+  const [ gate, setGate ] = useState('0')
   const [status, setStatus] = useState('')
   const [ secondPage, setSecondPage ] = useState('contactPage')
   const [toggleSun, setToggleSun ] = useState('fas fa-moon')
@@ -39,6 +39,12 @@ import TwitterProject from './twitterProject'
     xhr.send(data);
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      setGate('1')
+    }, 5000)
+  }, [])
+
   function handleClick() {
     if (modeToggle === 'lightOverallDiv') {
       setToggleSun('fas fa-sun')
@@ -59,15 +65,21 @@ import TwitterProject from './twitterProject'
     }
   }
   let handleChangeReturn = () => {
-    if (gate === 'true') {
-      setGate('false')
+    if (gate === '1') {
+      setGate('2')
     } else {
-      setGate('true')
+      setGate('1')
     }
   }
 
   let myInitialRender;
-  if (gate === 'true') {
+  if (gate === '0') {
+    myInitialRender = (
+      <div className='loadingOverall'>
+        <h1 className='typewriter'>{'<h1>'}Hello World{'<h1>'}</h1>
+      </div>
+    )
+  } else if (gate === '1') {
     myInitialRender = (
       <div className={`${modeToggle}`}>
         <div className='headerClass'>
@@ -118,7 +130,7 @@ import TwitterProject from './twitterProject'
         </footer>
       </div>
     )
-  } else {
+  } else if (gate === '2'){
     myInitialRender = (
         <div className={`${secondPage}`}>
         <h1>Leave Me A Message!</h1>
