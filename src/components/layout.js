@@ -105,10 +105,10 @@ import TwitterProject from './twitterProject'
             <h1 className={`${spaceMeTop}`}>Current Projects</h1>
 
             <div className='spaceMePlease'>
-                <DogProject />
+                  <TwitterProject />
               <div className='sideText spaceTheText'>
-                <h1 className={`${subTitleText}`}>Rent-A-Dog</h1>
-                <h4 className='spaceTheText'>Uses React and a node backend to link up users with adoptable dogs from a variety of agencies through petfinders api.</h4>
+                <h1 className={`${subTitleText}`}>Todo List</h1>
+                <h4 className='spaceTheText'>Basic to do list that uses react.js, mongoDB and Node on the backend. This app now uses googles speech-to-text api and therefore now only works on chrome. </h4>
               </div>
             </div>
             <div className='spaceMePlease'>
@@ -119,12 +119,13 @@ import TwitterProject from './twitterProject'
               </div>
             </div>
             <div className='spaceMePlease'>
-                  <TwitterProject />
+                <DogProject />
               <div className='sideText spaceTheText'>
-                <h1 className={`${subTitleText}`}>Todo List</h1>
-                <h4 className='spaceTheText'>Basic to do list that uses react.js, mongoDB and Node on the backend. This app now uses googles speech-to-text api and therefore now only works on chrome. </h4>
+                <h1 className={`${subTitleText}`}>Rent-A-Dog</h1>
+                <h4 className='spaceTheText'>Uses React and a node backend to link up users with adoptable dogs from a variety of agencies through petfinders api.</h4>
               </div>
             </div>
+
           </main>
         <footer className='footerClass'>
         </footer>
