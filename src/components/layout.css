@@ -660,6 +660,7 @@ pre tt:after {
 
 .subTitleTexts {
   color: #000;
+  font-size: 1.3em;
 }
 
 .buttonSpacing{
@@ -699,10 +700,6 @@ pre tt:after {
 }
 
 .lightOverallDiv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   animation-name: changeToWhite;
   animation-duration: .4s;
 }
