@@ -683,7 +683,7 @@ pre tt:after {
 
 .fab {
   font-size: 3em;
-  color: rgb(136, 132, 132);
+  color: white;
   margin-right: 2vw;
 }
 
@@ -699,13 +699,17 @@ pre tt:after {
 }
 
 .lightOverallDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   animation-name: changeToWhite;
   animation-duration: .4s;
 }
 
 .fas {
   font-size: 3em;
-  color: rgb(136, 132, 132);
+  color: white;
   margin-right: 2vw;
 }
 
@@ -719,34 +723,41 @@ pre tt:after {
 
 .subTitleTextDark {
   color: white;
+  font-size: 3em;
 }
 
 .titleText {
-  color: black;
+  color: white;
+  font-size: 3em;
 }
 
 .titleTextTwoDark {
-  color: rgb(136, 132, 132);
+  color: white;
   margin-bottom: 1%;
-  text-align: left;
+  font-size: 3em;
 }
 
 .titleTextTwo {
-  color: rgb(136, 132, 132);
+  color: white;
   margin-bottom: 1%;
-  text-align: left;
+  font-size: 3em;
 }
 
 .titleTextDark {
   color: white;
+  font-size: 3em;
 }
 
 .headerClass {
   display: flex;
   flex-direction: column;
-  margin-left: 3%;
-  /* margin-top: 3%; */
-  width: 25vw;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./luca-micheli-RpvC77-exG0-unsplash.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+  margin-bottom: 3%;
 }
 
 .spacerDiv {
@@ -799,7 +810,7 @@ pre tt:after {
 
 .spaceMePleaseTopText {
   text-align: left;
-  color: rgb(136, 132, 132);
+  color: white;
 }
 
 #topFile {
@@ -853,6 +864,8 @@ pre tt:after {
 
 #sun {
   font-size: 1.3em;
+  color: black;
+  opacity: .8;
 }
 
 .imagePicture:hover {
@@ -913,12 +926,48 @@ pre tt:after {
   }
 }
 
+.whiteBoxTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  opacity: .9;
+  width: 80vw;
+}
+
 /* ***************************** MOBILE STYLING ********************************* */
 
 @media only screen and (max-width: 850px) {
   html {
     font-size: 80%;
   }
+
+  .headerClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./luca-micheli-RpvC77-exG0-unsplash.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 30vh;
+    margin-bottom: 3%;
+  }
+
+  .whiteBoxTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: .9;
+    width: 80vw;
+  }
+
+.spaceMePleaseTopText {
+  color: white;
+}
   
   .contactPage {
     display: flex;
@@ -934,6 +983,33 @@ pre tt:after {
     flex-flow: column;
     justify-content: center;
     color: rgb(136, 132, 132);
+  }
+
+  .subTitleTextDark {
+    color: white;
+    font-size: 1.3em;
+  }
+  
+  .titleText {
+    color: white;
+    font-size: 1em;
+  }
+  
+  .titleTextTwoDark {
+    color: white;
+    margin-bottom: 1%;
+    font-size: 1.3em;
+  }
+  
+  .titleTextTwo {
+    color: white;
+    margin-bottom: 1%;
+    font-size: 1.3em;
+  }
+  
+  .titleTextDark {
+    color: white;
+    font-size: 1em;
   }
   
 .linkStyles {
@@ -1002,16 +1078,6 @@ pre tt:after {
     margin-top: 5%;
     padding-bottom: 2%;
     color: rgb(136, 132, 132);
-  }
-  
-  .headerClass {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 3%;
-    padding-top: 3%;
-    width: 50vw;
   }
   
   .mainAppDiv {

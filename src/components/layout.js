@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import Resume from '../images/ResumeHuman.pdf'
 import { Link } from 'gatsby'
 import "./layout.css"
-import { ContextProviderComponent } from './context'
 import SEO from './seo'
 import DogProject from './dogProject'
 import ChemistryProject from './chemistryProject'
@@ -70,24 +69,24 @@ import TwitterProject from './twitterProject'
   let myInitialRender;
   if (gate === 'true') {
     myInitialRender = (
-      <ContextProviderComponent>
       <div className={`${modeToggle}`}>
+        <div className='headerClass'>
+          <div className='whiteBoxTop'>
+            <div className='spacerDiv'></div>
+            <h2 className={`${titleToggle}`}>Nicholas Shankland | Front End Developer</h2>
+            <div className='favicons'>
+              <i class="fas fa-envelope" id='topEmail' onClick={handleChangeReturn}></i>
+              <a href='https://github.com/cerebrium' title='Link to my Github' target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square" id='topGithub'></i></a> 
+              <a href="https://reactresources.com/" title='Link to react resources' target="_blank" rel="noopener noreferrer"><i className="fab fa-react" id='topReact'></i></a> {' '}
+              <a href="https://www.linkedin.com/in/nicholasshankland/" title='Link to my LinkIn page' target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin" id='topLinkedin'></i></a> {' '}
+              <a href={Resume} title='My resume' target="_blank" rel="noopener noreferrer"><i className="fas fa-file" id='topFile'></i></a><br />
+            </div><br />
+              <h4 className='spaceMePleaseTopText'>Visual design solutions and react lover. I enjoy working on projects with people and <br />companies 
+              interested in finding the most visually appealing and intuitive solutions.</h4>
+          </div>
+        </div>
         <div className='headerClassSun'>
           <i onClick={() => handleClick()} className={`${toggleSun}`} id='sun' title='Toggle between light and dark modes'></i>
-        </div>
-        <div className='headerClass'>
-          <div className='spacerDiv'></div>
-          <h2 className={`${titleToggle}`}>Nicholas Shankland</h2>
-          <h3 className={`${titleToggleTwo}`}>Front End Developer</h3>
-          <div className='favicons'>
-            <i class="fas fa-envelope" id='topEmail' onClick={handleChangeReturn}></i>
-            <a href='https://github.com/cerebrium' title='Link to my Github' target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square" id='topGithub'></i></a> 
-            <a href="https://reactresources.com/" title='Link to react resources' target="_blank" rel="noopener noreferrer"><i className="fab fa-react" id='topReact'></i></a> {' '}
-            <a href="https://www.linkedin.com/in/nicholasshankland/" title='Link to my LinkIn page' target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin" id='topLinkedin'></i></a> {' '}
-            <a href={Resume} title='My resume' target="_blank" rel="noopener noreferrer"><i className="fas fa-file" id='topFile'></i></a><br />
-          </div><br />
-          <h4 className='spaceMePleaseTopText'>Visual design solutions and react lover. I enjoy working on projects with people and companies 
-      interested in finding the most visually appealing and intuitive solutions.</h4>
         </div>
           <main>
             <SEO title="Home" />
@@ -117,17 +116,11 @@ import TwitterProject from './twitterProject'
             </div>
           </main>
         <footer className='footerClass'>
-          <a href='https://github.com/cerebrium' title='Link to my Github' target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i></a> 
-          <a href="https://reactresources.com/" title='Link to react resources' target="_blank" rel="noopener noreferrer"><i className="fab fa-react" id='reactOne'></i></a> 
-          <a href="https://www.linkedin.com/in/nicholasshankland/" title='Link to my LinkIn page' target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin" id='linkedinOne'></i></a>
-          <a href={Resume} title='My resume' target="_blank" rel="noopener noreferrer"><i className="fas fa-file" id='fa-files'></i></a>
         </footer>
       </div>
-    </ContextProviderComponent>
     )
   } else {
     myInitialRender = (
-      <ContextProviderComponent>
         <div className={`${secondPage}`}>
         <h1>Leave Me A Message!</h1>
         <SEO title="Contact Page" />
@@ -143,7 +136,6 @@ import TwitterProject from './twitterProject'
           </form>
         <button className='buttonSpacingTwo' onClick={handleChangeReturn}>Go back to the homepage</button>
       </div>
-    </ContextProviderComponent>
     )
   }
   // the return part
