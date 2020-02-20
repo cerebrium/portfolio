@@ -18,7 +18,7 @@ import TwitterProject from './twitterProject'
   const [ gate, setGate ] = useState('0')
   const [status, setStatus] = useState('')
   const [ secondPage, setSecondPage ] = useState('contactPage')
-  const [toggleSun, setToggleSun ] = useState('fas fa-moon')
+  const [toggleSun, setToggleSun ] = useState('fas fa-sun')
 
   const submitForm = (ev) => {
     ev.preventDefault();
