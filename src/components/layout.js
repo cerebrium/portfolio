@@ -42,7 +42,7 @@ import TwitterProject from './twitterProject'
   useEffect(() => {
     setTimeout(() => {
       setGate('1')
-    }, 5000)
+    }, 15000)
   }, [])
 
   function handleClick() {
@@ -72,13 +72,23 @@ import TwitterProject from './twitterProject'
     }
   }
 
+  // the typing in the begining 
   let myInitialRender;
   if (gate === '0') {
     myInitialRender = (
       <div className='loadingOverall'>
-        <h1 className='typewriter'>{'<h1>'}Hello World{'<h1>'}</h1>
+        <div>
+          <h1 className='typewriter'>{'<h1> '}Hello World{' </h1>'}</h1>
+        </div>
+        <div>
+          <h2 className='typewriterTwo'>{'<h2> '}I am {'<span> '}<span className='nameTag'>Nick</span>{' </span>'}{' </h2>'} </h2>
+        </div>
+        <div>
+          <h2 className='typewriterThree'>{'<h2> '}here is my <span className='nameTag'>portfolio</span> {'</h2>'}</h2>
+        </div>
       </div>
     )
+    // non-email page
   } else if (gate === '1') {
     myInitialRender = (
       <div className={`${modeToggle}`}>

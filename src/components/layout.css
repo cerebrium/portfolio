@@ -936,6 +936,7 @@ pre tt:after {
 .loadingOverall {
   background-color: rgb(2, 1, 12);
   height: 100vh;
+  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -946,22 +947,81 @@ pre tt:after {
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-  color: orange;
+  color: white;
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
+.typewriterTwo{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  color: white;
+  visibility: hidden;
+  animation: 
+    typingTwo 3.5s steps(40, end) 5s,
+    blink-caretTwo .75s step-end infinite 5s;
+}
+
+.nameTag{
+  color: orangered;
+}
+
+.typewriterThree{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  color: white;
+  visibility: hidden;
+  animation-delay: 10s;
+  animation: 
+    typingThree 3.5s steps(40, end) 10s,
+    blink-caretThree .75s step-end infinite 10s;
+}
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 38% }
+  to { width: 100% }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange; }
+  100% { border-color: white; }
+}
+/* The typing effect */
+@keyframes typingTwo {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caretTwo {
+  0% {
+    visibility: visible;
+  }
+  from, to { border-color: transparent }
+  100% { border-color: white; }
+}
+/* The typing effect */
+@keyframes typingThree {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caretThree {
+  0% {
+    visibility: visible;
+  }
+  from, to { border-color: transparent }
+  100% { border-color: white; }
 }
 
 /* ***************************** MOBILE STYLING ********************************* */
@@ -970,29 +1030,96 @@ pre tt:after {
   html {
     font-size: 80%;
   }
-
   .typewriter{
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid white; /* The typwriter cursor */
+    border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    color: orange;
+    color: white;
+    font-size: 1em;
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
   }
   
+  .typewriterTwo{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    color: white;
+    font-size: 1em;
+    visibility: hidden;
+    animation: 
+      typingTwo 3.5s steps(40, end) 5s,
+      blink-caretTwo .75s step-end infinite 5s;
+  }
+  
+  .nameTag{
+    color: orangered;
+  }
+  
+  .typewriterThree{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    color: white;
+    font-size: 1em;
+    visibility: hidden;
+    animation-delay: 10s;
+    animation: 
+      typingThree 3.5s steps(40, end) 10s,
+      blink-caretThree .75s step-end infinite 10s;
+  }
+  
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 64% }
+    to { width: 100% }
   }
   
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange; }
+    100% { border-color: orange; }
+  }
+  /* The typing effect */
+  @keyframes typingTwo {
+    0% {
+      visibility: visible;
+    }
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caretTwo {
+    0% {
+      visibility: visible;
+    }
+    from, to { border-color: transparent }
+    100% { border-color: orange; }
+  }
+  /* The typing effect */
+  @keyframes typingThree {
+    0% {
+      visibility: visible;
+    }
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caretThree {
+    0% {
+      visibility: visible;
+    }
+    from, to { border-color: transparent }
+    100% { border-color: orange; }
   }
 
   .loadingOverall {
@@ -1116,6 +1243,11 @@ pre tt:after {
     font-size: 1.5em;
     text-align: center;
     color: rgb(136, 132, 132);
+  }
+
+  .subTitleTexts {
+    color: #000;
+    font-size: 1.3em;
   }
   
   .fab {
