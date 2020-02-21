@@ -951,7 +951,7 @@ pre tt:after {
   visibility: hidden;
   animation: 
     typing 3.5s steps(40, end) 1s,
-    blink-caret .75s step-end infinite 1s;
+    blink-caret .35s step-end 1s infinite ;
 }
 
 .typewriterTwo{
@@ -963,8 +963,8 @@ pre tt:after {
   color: rgb(136, 132, 132);
   visibility: hidden;
   animation: 
-    typingTwo 3.5s steps(40, end) 5s,
-    blink-caretTwo .75s step-end infinite 5s;
+    typingTwo 4.5s steps(40, end) 5s,
+    blink-caretTwo .35s step-end 5s infinite ;
 }
 
 .nameTag{
@@ -980,10 +980,9 @@ pre tt:after {
   letter-spacing: .15em; /* Adjust as needed */
   color: rgb(136, 132, 132);
   visibility: hidden;
-  animation-delay: 10s;
   animation: 
     typingThree 3.5s steps(40, end) 10s,
-    blink-caretThree .75s step-end infinite 10s;
+    blink-caretThree .35s step-end 10s infinite ;
 }
 
 /* The typing effect */
@@ -1000,8 +999,9 @@ pre tt:after {
   0% {
     visibility: visible;
   }
-  0% { border-color: rgb(136, 132, 132);}
-  100% { border-color: rgb(136, 132, 132); }
+  100% {
+    border-color: transparent;
+  }
 }
 /* The typing effect */
 @keyframes typingTwo {
@@ -1014,7 +1014,9 @@ pre tt:after {
   0% {
     visibility: visible;
   }
-  100% { border-color: rgb(136, 132, 132); }
+  100% {
+    border-color: transparent;
+  }
 }
 /* The typing effect */
 @keyframes typingThree {
@@ -1027,7 +1029,9 @@ pre tt:after {
   0% {
     visibility: visible;
   }
-  100% { border-color: rgb(136, 132, 132); }
+  100% {
+    border-color: transparent;
+  }
 }
 
 /* ***************************** MOBILE STYLING ********************************* */
