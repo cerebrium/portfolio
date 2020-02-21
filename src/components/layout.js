@@ -84,7 +84,7 @@ import TwitterProject from './twitterProject'
           <h2 className='typewriterTwo'>{'<h2> '}I am {'<span> '}<span className='nameTag'>Nick</span>{' </span>'}{' </h2>'} </h2>
         </div>
         <div>
-          <h2 className='typewriterThree'>{'<h2> '}here is my <span className='nameTag'>portfolio</span> {'</h2>'}</h2>
+          <h2 className='typewriterThree'>{'<h2> '}This is my <span className='nameTag'>Portfolio</span> {'</h2>'}</h2>
         </div>
       </div>
     )
