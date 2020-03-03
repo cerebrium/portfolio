@@ -1,643 +1,29 @@
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-}
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-progress {
-  vertical-align: baseline;
-}
-[hidden],
-template {
-  display: none;
-}
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
-a:active,
-a:hover {
-  outline-width: 0;
-}
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted;
-}
-b,
-strong {
-  font-weight: inherit;
-  font-weight: bolder;
-}
-dfn {
-  font-style: italic;
-}
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-small {
-  font-size: 80%;
-}
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sub {
-  bottom: -0.25em;
-}
-sup {
-  top: -0.5em;
-}
-img {
-  border-style: none;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-figure {
-  margin: 1em 40px;
-}
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-button,
-input,
-optgroup,
-select,
-textarea {
-  font: inherit;
-  margin: 0;
-}
-optgroup {
-  font-weight: 700;
-}
-button,
-input {
-  overflow: visible;
-}
-button,
-select {
-  text-transform: none;
-}
-[type="reset"],
-[type="submit"],
-button,
-html [type="button"] {
-  -webkit-appearance: button;
-}
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner,
-button::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring,
-button:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-fieldset {
-  border: 1px solid silver;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-}
-textarea {
-  overflow: auto;
-}
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-[type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-}
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54;
-}
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
-}
-html {
-  font: 112.5%/1.45em georgia, serif;
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
-* {
-  box-sizing: inherit;
-}
-*:before {
-  box-sizing: inherit;
-}
-*:after {
-  box-sizing: inherit;
-}
-body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
-}
-img {
-  max-width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-img:hover {
-  box-shadow: 10px 10px 5px grey;
-}
-h1 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
-  line-height: 1.1;
-}
-h2 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
-  line-height: 1.1;
-}
-h3 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
-  line-height: 1.1;
-}
-h4 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 1rem;
-  line-height: 1.1;
-}
-h5 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 0.85028rem;
-  line-height: 1.1;
-}
-h6 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 0.78405rem;
-  line-height: 1.1;
-}
-hgroup {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-ul {
-  margin-left: 1.45rem;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  list-style-position: outside;
-  list-style-image: none;
-}
-ol {
-  margin-left: 1.45rem;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  list-style-position: outside;
-  list-style-image: none;
-}
-dl {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-dd {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-p {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-figure {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-pre {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 1.45rem;
-  font-size: 0.85rem;
-  line-height: 1.42;
-  background: hsla(0, 0%, 0%, 0.04);
-  border-radius: 3px;
-  overflow: auto;
-  word-wrap: normal;
-  padding: 1.45rem;
-}
-table {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  font-size: 1rem;
-  line-height: 1.45rem;
-  border-collapse: collapse;
-  width: 100%;
-}
-fieldset {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-blockquote {
-  margin-left: 1.45rem;
-  margin-right: 1.45rem;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-form {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-noscript {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-iframe {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-hr {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: calc(1.45rem - 1px);
-  background: hsla(0, 0%, 0%, 0.2);
-  border: none;
-  height: 1px;
-}
-address {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-b {
-  font-weight: bold;
-}
-strong {
-  font-weight: bold;
-}
-dt {
-  font-weight: bold;
-}
-th {
-  font-weight: bold;
-}
-li {
-  margin-bottom: calc(1.45rem / 2);
-}
-ol li {
-  padding-left: 0;
-}
-ul li {
-  padding-left: 0;
-}
-li > ol {
-  margin-left: 1.45rem;
-  margin-bottom: calc(1.45rem / 2);
-  margin-top: calc(1.45rem / 2);
-}
-li > ul {
-  margin-left: 1.45rem;
-  margin-bottom: calc(1.45rem / 2);
-  margin-top: calc(1.45rem / 2);
-}
-blockquote *:last-child {
-  margin-bottom: 0;
-}
-li *:last-child {
-  margin-bottom: 0;
-}
-p *:last-child {
-  margin-bottom: 0;
-}
-li > p {
-  margin-bottom: calc(1.45rem / 2);
-}
-code {
-  font-size: 0.85rem;
-  line-height: 1.45rem;
-}
-kbd {
-  font-size: 0.85rem;
-  line-height: 1.45rem;
-}
-samp {
-  font-size: 0.85rem;
-  line-height: 1.45rem;
-}
-abbr {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
-  cursor: help;
-}
-acronym {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
-  cursor: help;
-}
-abbr[title] {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
-  cursor: help;
-  text-decoration: none;
-}
-thead {
-  text-align: left;
-}
-td,
-th {
-  text-align: left;
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
-  font-feature-settings: "tnum";
-  -moz-font-feature-settings: "tnum";
-  -ms-font-feature-settings: "tnum";
-  -webkit-font-feature-settings: "tnum";
-  padding-left: 0.96667rem;
-  padding-right: 0.96667rem;
-  padding-top: 0.725rem;
-  padding-bottom: calc(0.725rem - 1px);
-}
-th:first-child,
-td:first-child {
-  padding-left: 0;
-}
-th:last-child,
-td:last-child {
-  padding-right: 0;
-}
-tt,
-code {
-  background-color: hsla(0, 0%, 0%, 0.04);
-  border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
-  padding: 0;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-}
-pre code {
-  background: none;
-  line-height: 1.42;
-}
-code:before,
-code:after,
-tt:before,
-tt:after {
-  letter-spacing: -0.2em;
-  content: " ";
-}
-pre code:before,
-pre code:after,
-pre tt:before,
-pre tt:after {
-  content: "";
-}
-
 /* ***************************** MY STYLES ********************************* */
+body {
+  margin: 0;
+}
 
 .contactPage {
   display: flex;
   height: 100vh;
+  width: 100vw;
   align-items: center;
   flex-flow: column;
   justify-content: center;
   color: rgb(136, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .contactPageDark {
   display: flex;
   height: 100vh;
+  width: 100vw;
   align-items: center;
   flex-flow: column;
   justify-content: center;
   color: rgb(245, 243, 243);
   background-color: rgb(2, 1, 12);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .myContactForm{
@@ -646,31 +32,37 @@ pre tt:after {
   flex-flow: column;
   justify-content: center;
   color: rgb(136, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .linkStyles {
   text-decoration: none;
   color: white;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .linkStylesTwo {
   text-decoration: none;
   color: rgb(136, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .subTitleTexts {
   color: #000;
   font-size: 3em;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .buttonSpacing{
   margin-top: 8%;
   background-color: rgb(136, 132, 132);
   border: solid 1px rgb(136, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .buttonSpacingTwo{
   margin-top: 8%;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* ***************************** End Of CONTACT PAGE ********************************* */
@@ -680,11 +72,12 @@ pre tt:after {
   margin-bottom: 3%;
   background-color: rgb(136, 132, 132);
   border: solid 1px rgb(136, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .fab {
   font-size: 3em;
-  color: white;
+  color: rgb(136, 132, 132);
   margin-right: 2vw;
 }
 
@@ -697,17 +90,25 @@ pre tt:after {
   animation-name: changeToDark;
   animation-duration: .4s;
   animation-fill-mode: forwards;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .lightOverallDiv {
   animation-name: changeToWhite;
   animation-duration: .4s;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .fas {
   font-size: 3em;
-  color: white;
+  color: rgb(136, 132, 132);
   margin-right: 2vw;
+}
+.fas:hover {
+  color: white;
+}
+.fab:hover {
+  color: white;
 }
 
 .footerClass {
@@ -716,33 +117,46 @@ pre tt:after {
   margin-top: 3%;
   padding-bottom: 1%;
   color: rgb(136, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .subTitleTextDark {
   color: white;
   font-size: 3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 1%;
 }
 
 .titleText {
   color: white;
   font-size: 3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 1%;
 }
 
 .titleTextTwoDark {
   color: white;
-  margin-bottom: 1%;
   font-size: 3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 1%;
 }
 
 .titleTextTwo {
   color: white;
-  margin-bottom: 1%;
   font-size: 3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 1%;
 }
 
 .titleTextDark {
   color: white;
   font-size: 3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 1%;
+}
+
+.frontEndDeveloper {
+  color: rgb(136, 132, 132);
 }
 
 .headerClass {
@@ -755,11 +169,12 @@ pre tt:after {
   width: 100vw;
   height: 50vh;
   margin-bottom: 3%;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-.spacerDiv {
+/* .spacerDiv {
   height: 4vh;
-}
+} */
 .favicons {
   display: flex;
 }
@@ -774,6 +189,7 @@ pre tt:after {
   justify-content: center;
   align-items: center;
   color: rgb(136, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .spaceMePlease {
@@ -781,6 +197,7 @@ pre tt:after {
   justify-content: space-evenly;
   margin: 1%;
   color: rgb(136, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .spaceTheText {
@@ -789,11 +206,12 @@ pre tt:after {
 
 .sideText {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   width: 55vw;
   color: rgb(136, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .spaceMePleaseTop {
@@ -803,11 +221,14 @@ pre tt:after {
   margin: auto 5%;
   text-align: justify;
   color: rgb(136, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .spaceMePleaseTopText {
+  margin-top: 0;
   text-align: left;
-  color: white;
+  color: rgb(136, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #topFile {
@@ -842,6 +263,7 @@ pre tt:after {
   margin: auto 5%;
   text-align: justify;
   color: black;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .spaceMePleaseTopCurrDark {
@@ -851,6 +273,7 @@ pre tt:after {
   margin: auto 5%;
   text-align: justify;
   color: white;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .headerClassSun {
@@ -868,11 +291,13 @@ pre tt:after {
 .imagePicture:hover {
   animation-name: shadoweffect;
   animation-duration: 50s;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .indexButton:hover {
   background-color: rgb(184, 98, 67);
   opacity: .8;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 @keyframes shadoweffect {
@@ -927,10 +352,12 @@ pre tt:after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: rgb(2, 1, 12);
-  opacity: .9;
-  width: 80vw;
+  opacity: .7;
+  width: 100%;
+  height: 100%;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .loadingOverall {
@@ -940,6 +367,7 @@ pre tt:after {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 .typewriter{
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -948,6 +376,7 @@ pre tt:after {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   color: rgb(136, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
   visibility: hidden;
   animation: 
     typing 3.5s steps(40, end) 1s,
@@ -961,6 +390,7 @@ pre tt:after {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   color: rgb(136, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
   visibility: hidden;
   animation: 
     typingTwo 4.5s steps(40, end) 5s,
@@ -970,6 +400,7 @@ pre tt:after {
 .nameTag{
   color: white;
   font-size: 2em;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .typewriterThree{
@@ -979,6 +410,7 @@ pre tt:after {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   color: rgb(136, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
   visibility: hidden;
   animation: 
     typingThree 3.5s steps(40, end) 10s,
@@ -1190,11 +622,13 @@ pre tt:after {
   .subTitleTextDark {
     color: white;
     font-size: 1.3em;
+    margin-bottom: 1%;
   }
   
   .titleText {
     color: white;
     font-size: 1em;
+    margin-bottom: 1%;
   }
   
   .titleTextTwoDark {
@@ -1212,6 +646,7 @@ pre tt:after {
   .titleTextDark {
     color: white;
     font-size: 1em;
+    margin-bottom: 1%;
   }
   
 .linkStyles {
@@ -1266,6 +701,7 @@ pre tt:after {
   .subTitleTexts {
     color: #000;
     font-size: 1.3em;
+    margin-bottom: 1%;
   }
   
   .fab {
