@@ -17,7 +17,7 @@ import TwitterProject from './twitterProject'
   const [ spaceMeTop, setSpaceMeTop ] = useState('spaceMePleaseTopCurrDark')
   const [ gate, setGate ] = useState('0')
   const [status, setStatus] = useState('')
-  const [ secondPage, setSecondPage ] = useState('contactPage')
+  const [ secondPage, setSecondPage ] = useState('contactPageDark')
   const [toggleSun, setToggleSun ] = useState('fas fa-sun')
 
   const submitForm = (ev) => {
