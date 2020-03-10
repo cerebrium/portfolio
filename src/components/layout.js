@@ -42,7 +42,7 @@ import TwitterProject from './twitterProject'
   useEffect(() => {
     setTimeout(() => {
       setGate('1')
-    }, 15000)
+    }, 5500)
   }, [])
 
   function handleClick() {
@@ -78,13 +78,7 @@ import TwitterProject from './twitterProject'
     myInitialRender = (
       <div className='loadingOverall'>
         <div>
-          <h1 className='typewriter'>{'<h1> '}Hello World{' </h1>'}</h1>
-        </div>
-        <div>
-          <h2 className='typewriterTwo'>{'<h2> '}I am {'<span> '}<span className='nameTag'>Nick</span>{' </span>'}{' </h2>'} </h2>
-        </div>
-        <div>
-          <h2 className='typewriterThree'>{'<h2> '}This is my {'<span> '}<span className='nameTag'>Portfolio</span> {' </span>'}{'</h2>'}</h2>
+          <h1 className='typewriter'>{'<h1> '}Hello World... I am <span className='nameTag'>Nick</span>{' </h1>'}</h1>
         </div>
       </div>
     )

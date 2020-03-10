@@ -375,88 +375,41 @@ body {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   color: rgb(136, 132, 132);
-  font-family: 'Ubuntu', sans-serif;
-  visibility: hidden;
   animation: 
-    typing 3.5s steps(40, end) 1s,
-    blink-caret .35s step-end 1s infinite ;
-}
-
-.typewriterTwo{
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(136, 132, 132); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  color: rgb(136, 132, 132);
-  font-family: 'Ubuntu', sans-serif;
-  visibility: hidden;
-  animation: 
-    typingTwo 4.5s steps(40, end) 5s,
-    blink-caretTwo .35s step-end 5s infinite ;
+    typing 4s steps(50, end),
+    blink-caret .6s step-end infinite ;
 }
 
 .nameTag{
   color: white;
-  font-size: 2em;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.typewriterThree{
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(136, 132, 132); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  color: rgb(136, 132, 132);
-  font-family: 'Ubuntu', sans-serif;
-  visibility: hidden;
-  animation: 
-    typingThree 3.5s steps(40, end) 10s,
-    blink-caretThree .35s step-end 10s infinite ;
+  font-size: 1.2em;
 }
 
 /* The typing effect */
 @keyframes typing {
-  0% {
-    visibility: visible;
-  }
   from { width: 0 }
   to { width: 100% }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
+  from, to { 
+    border-color: transparent;
+   }
+  50% { border-color: white;}
+}
+/* The typing effect */
+@keyframes typingTwo {
   0% {
     visibility: visible;
   }
   100% {
     border-color: transparent;
   }
-}
-/* The typing effect */
-@keyframes typingTwo {
-  from { width: 0 }
-  to { width: 100% }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caretTwo {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    border-color: transparent;
-  }
-}
-/* The typing effect */
-@keyframes typingThree {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caretThree {
   0% {
     visibility: visible;
   }
@@ -478,25 +431,9 @@ body {
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     color: rgb(136, 132, 132);
-    visibility: hidden;
-    font-size: 1em;
     animation: 
-      typing 3.5s steps(40, end) 1s,
-      blink-caret .75s step-end infinite 1s;
-  }
-  
-  .typewriterTwo{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(136, 132, 132); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    color: rgb(136, 132, 132);
-    visibility: hidden;
-    font-size: 1em;
-    animation: 
-      typingTwo 3.5s steps(40, end) 5s,
-      blink-caretTwo .75s step-end infinite 5s;
+      typing 4s steps(40, end),
+      blink-caret .75s step-end infinite ;
   }
   
   .nameTag{
@@ -504,19 +441,18 @@ body {
     font-size: 1.2em;
   }
   
-  .typewriterThree{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(136, 132, 132); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    color: rgb(136, 132, 132);
-    visibility: hidden;
-    animation-delay: 10s;
-    font-size: 1em;
-    animation: 
-      typingThree 3.5s steps(40, end) 10s,
-      blink-caretThree .75s step-end infinite 10s;
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { 
+      border-color: transparent;
+     }
+    50% { border-color: white;}
   }
   
   /* The typing effect */
