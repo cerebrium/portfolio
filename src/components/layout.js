@@ -139,16 +139,16 @@ import TwitterProject from './twitterProject'
   } else if (gate === '2'){
     myInitialRender = (
         <div className={`${secondPage}`}>
-        <h1>Leave Me A Message!</h1>
+        <h1 className='leaveMeAMessage'>Leave Me A Message!</h1>
         <SEO title="Contact Page" />
           <form onSubmit={submitForm} action="https://formspree.io/meqelkae" method="POST" className='myContactForm'>
             <label>Name:  </label>
-            <input type="text" name="name"/><br />
+            <input type="text" name="name" className='inputArea'/><br />
             <label>Email:  </label>
-            <input type="email" name="email" /><br />
+            <input type="email" name="email" className='inputArea'/><br />
             <label>Message:</label>
-            <textarea type="text" name="message" rows='10' cols='50'></textarea><br />
-            {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+            <textarea type="text" name="message" rows='18' cols='100'></textarea><br />
+            {status === "SUCCESS" ? <p>Thanks!</p> : <button className='buttonSpacingThree'>Submit</button>}
             {status === "ERROR" && <p>Ooops! There was an error.</p>}
           </form>
         <button className='buttonSpacingTwo' onClick={handleChangeReturn}>Go back to the homepage</button>
