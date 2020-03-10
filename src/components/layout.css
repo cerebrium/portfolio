@@ -448,18 +448,24 @@ button {
 
 /* ***************************** MOBILE STYLING ********************************* */
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   html {
-    font-size: 80%;
+    font-size: 70%;
   }
+
   .inputArea {
-    width: 15vw;
+    width: 30vw;
     height: 2vh;
+  }
+
+  .textArea {
+    width: 70vw;
+    height: 20vh;
   }
   
   .buttonSpacingThree{
     height: 5vh;
-    width: 7vw;
+    width: 20vw;
     font-size: .6em;
     color: rgb(136, 132, 132);
     background-color: white;
@@ -649,11 +655,12 @@ button {
 }
 
 .buttonSpacingTwo{
-  margin-top: 3%;
+  margin-top: 20%;
   font-family: 'Ubuntu', sans-serif;
   font-size: .7em;
-  width: 10vw;
+  width: 20vw;
   height: 5vh;
+  background-color: white;
   border-radius: 15;
   color: rgb(136, 132, 132);
 }
