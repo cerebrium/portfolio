@@ -19,6 +19,7 @@ import TwitterProject from './twitterProject'
   const [status, setStatus] = useState('')
   const [ secondPage, setSecondPage ] = useState('contactPageDark')
   const [toggleSun, setToggleSun ] = useState('fas fa-sun')
+  const [ responseText, setResponseText ] = useState('Submit')
 
   const submitForm = (ev) => {
     ev.preventDefault();
@@ -33,7 +34,7 @@ import TwitterProject from './twitterProject'
         form.reset();
         setStatus({ status: "SUCCESS" });
       } else {
-        this.setStatus({ status: "ERROR" });
+        setStatus({ status: "ERROR" });
       }
     };
     xhr.send(data);
@@ -44,6 +45,10 @@ import TwitterProject from './twitterProject'
       setGate('1')
     }, 5500)
   }, [])
+
+  function buttonSubmitted () {
+    setResponseText('Thanks')
+  }
 
   function handleClick() {
     if (modeToggle === 'lightOverallDiv') {
@@ -67,8 +72,10 @@ import TwitterProject from './twitterProject'
   let handleChangeReturn = () => {
     if (gate === '1') {
       setGate('2')
+      setResponseText('Submit')
     } else {
       setGate('1')
+      setResponseText('Submit')
     }
   }
 
@@ -88,17 +95,16 @@ import TwitterProject from './twitterProject'
       <div className={`${modeToggle}`}>
         <div className='headerClass'>
           <div className='whiteBoxTop'>
-            <div className='spacerDiv'></div>
-            <h2 className={`${titleToggle}`}>Nicholas Shankland | <span className='frontEndDeveloper'>Front End Developer</span></h2>
-            <h4 className='spaceMePleaseTopText'>Visual design solutions and react lover. I enjoy working on projects with people and <br />companies 
-              interested in finding the most visually appealing and intuitive solutions.</h4>
-            <div className='favicons'>
-              <i class="fas fa-envelope" id='topEmail' onClick={handleChangeReturn}></i>
-              <a href='https://github.com/cerebrium' title='Link to my Github' target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square" id='topGithub'></i></a> 
-              <a href="https://www.linkedin.com/in/nicholasshankland/" title='Link to my LinkIn page' target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin" id='topLinkedin'></i></a> {' '}
-              <a href={Resume} title='My resume' target="_blank" rel="noopener noreferrer"><i className="fas fa-file" id='topFile'></i></a><br />
-            </div><br />
-              
+              <div className='spacerDiv'></div>
+              <h2 className={`${titleToggle}`}>Nicholas Shankland | <span className='frontEndDeveloper'>Front End Developer</span></h2>
+              <h4 className='spaceMePleaseTopText'>Visual design solutions and react lover. I enjoy working on projects with people and <br />companies 
+                interested in finding the most visually appealing and intuitive solutions.</h4>
+              <div className='favicons'>
+                <i class="fas fa-envelope" id='topEmail' onClick={handleChangeReturn}></i>
+                <a href='https://github.com/cerebrium' title='Link to my Github' target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square" id='topGithub'></i></a> 
+                <a href="https://www.linkedin.com/in/nicholasshankland/" title='Link to my LinkIn page' target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin" id='topLinkedin'></i></a> {' '}
+                <a href={Resume} title='My resume' target="_blank" rel="noopener noreferrer"><i className="fas fa-file" id='topFile'></i></a><br />
+              </div><br />
           </div>
         </div>
         <div className='headerClassSun'>
@@ -148,7 +154,7 @@ import TwitterProject from './twitterProject'
             <input type="email" name="email" className='inputArea'/><br />
             <label>Message:</label>
             <textarea type="text" name="message" rows='18' cols='100' className='textArea'></textarea><br />
-            {status === "SUCCESS" ? <p>Thanks!</p> : <button className='buttonSpacingThree'>Submit</button>}
+            {status === "SUCCESS" ? <p>Thanks!</p> : <button className='buttonSpacingThree' onClick={buttonSubmitted}>{responseText}</button>}
             {status === "ERROR" && <p>Ooops! There was an error.</p>}
           </form>
         <button className='buttonSpacingTwo' onClick={handleChangeReturn}>Go back to the homepage</button>
