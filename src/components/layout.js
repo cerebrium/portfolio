@@ -85,7 +85,7 @@ import TwitterProject from './twitterProject'
     myInitialRender = (
       <div className='loadingOverall'>
         <div>
-          <h1 className='typewriter'>{'<h1> '}Hello World... I am <span className='nameTag'>Nick</span>{' </h1>'}</h1>
+          <h1 className='typewriter'>Hello World... I am <span className='nameTag'>Nick</span></h1>
         </div>
       </div>
     )
