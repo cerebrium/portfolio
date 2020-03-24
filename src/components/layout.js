@@ -114,29 +114,27 @@ import TwitterProject from './twitterProject'
             <SEO title="Home" />
             
             <h1 className={`${spaceMeTop}`}>Current Projects</h1>
-
-            <div className='spaceMePlease'>
-                  <TwitterProject />
-              <div className='sideText spaceTheText'>
-                <h1 className={`${subTitleText}`}>Todo List</h1>
-                <h4 className='spaceTheText'>Basic to do list that uses react.js, mongoDB and Node on the backend. This app now uses googles speech-to-text api and therefore now only works on chrome. </h4>
-              </div>
-            </div>
             <div className='spaceMePlease'>
                 <ChemistryProject />
               <div className='sideText spaceTheText'>
-                <h1 className={`${subTitleText}`}>Travel Foodie</h1>
-                <h4 className='spaceTheText'>My travel blog. This uses gatsby with a node backend and auth0. Talks about South East Asia and Eastern Washington, constantly being updated with new content as I travel!</h4>
+                <h1 className={`${subTitleText}`}>Bloggify</h1>
+                <h4 className='spaceTheText'>My Blog. Talks about places I have travelled, things I have eaten, and some programming things I have learned. </h4>
               </div>
             </div>
             <div className='spaceMePlease'>
                 <DogProject />
               <div className='sideText spaceTheText'>
-                <h1 className={`${subTitleText}`}>Rent-A-Dog</h1>
-                <h4 className='spaceTheText'>Uses React and a node backend to link up users with adoptable dogs from a variety of agencies through petfinders api.</h4>
+                <h1 className={`${subTitleText}`}>Amazon Services</h1>
+                <h4 className='spaceTheText'>Uses Gatsby to show a delivery service website for a company in the UK. Uses lazy loading imports for the images.</h4>
               </div>
             </div>
-
+            <div className='spaceMePlease'>
+                  <TwitterProject />
+              <div className='sideText spaceTheText'>
+                <h1 className={`${subTitleText}`}>Todo List (chrome only)</h1>
+                <h4 className='spaceTheText'> Full MERN stack app for basic to-do list. This app now uses googles speech-to-text api and therefore now only works on chrome. Hosted on Heroku and takes ~30 seconds to load. </h4>
+              </div>
+            </div>
           </main>
         <footer className='footerClass'>
         </footer>
