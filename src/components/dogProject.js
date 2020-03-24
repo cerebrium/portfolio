@@ -7,7 +7,7 @@ const DogProject = () => {
     query {
       fileName: file(relativePath: { eq: "amazonServices.png" }) {
         childImageSharp {
-          fluid(maxWidth: 500, maxHeight: 300, quality: 100) {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
