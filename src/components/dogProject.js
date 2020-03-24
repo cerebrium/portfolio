@@ -16,7 +16,7 @@ const DogProject = () => {
   `)
 
   return (<div className='imageStyler'>
-      <a href="https://websiteformyginishka.netlify.com/contact/" target="_blank" rel="noopener noreferrer"><Img fluid={data.fileName.childImageSharp.fluid} alt="../images/dogApp.png" className='imagePicture'/></a>
+      <a href="https://websiteformyginishka.netlify.com/" target="_blank" rel="noopener noreferrer"><Img fluid={data.fileName.childImageSharp.fluid} alt="../images/dogApp.png" className='imagePicture'/></a>
   </div> )
 }
 
