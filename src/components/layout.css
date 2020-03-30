@@ -498,7 +498,7 @@ body {
   
   .buttonSpacingThree{
     height: 5vh;
-    width: 7vw;
+    width: 20vw;
     font-size: .6em;
     color: rgb(245, 243, 243);
     background-color: rgb(136, 132, 132);
@@ -511,7 +511,7 @@ body {
     transform: translateY(-.25vh);
     background-color: rgb(151, 151, 151);
   }
-  
+
   .typewriter{
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid rgb(136, 132, 132); /* The typwriter cursor */
@@ -697,7 +697,7 @@ body {
 
 .buttonSpacingTwo{
   height: 5vh;
-  width: 7vw;
+  width: 20vw;
   font-size: 1.2em;
   color: rgb(245, 243, 243);
   background-color: rgb(136, 132, 132);

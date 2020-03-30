@@ -8,7 +8,6 @@ import ChemistryProject from './chemistryProject'
 import TwitterProject from './twitterProject'
 
 // Some state is giong on here
-// another one
  export default () => {
   const [ modeToggle, setModeToggle ] = useState('overallDiv')
   const [ titleToggle, setTitleToggle ] = useState('titleText')
