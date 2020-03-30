@@ -151,11 +151,11 @@ import TwitterProject from './twitterProject'
             <label>Email:  </label>
             <input type="email" name="email" className='inputArea'/><br />
             <label>Message:</label>
-            <textarea type="text" name="message" rows='18' cols='100' className='textArea'></textarea><br />
+            <textarea type="text" name="message" className='textArea'></textarea><br />
             {status === "SUCCESS" ? <p>Thanks!</p> : <button className='buttonSpacingThree' onClick={buttonSubmitted}>{responseText}</button>}
             {status === "ERROR" && <p>Ooops! There was an error.</p>}
           </form>
-        <button className='buttonSpacingTwo' onClick={handleChangeReturn}>Go back to the homepage</button>
+        <button className='buttonSpacingTwo' onClick={handleChangeReturn}>Return</button>
       </div>
     )
   }

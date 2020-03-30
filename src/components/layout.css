@@ -14,22 +14,47 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+.textArea {
+  width: 45vw;
+  height: 30vh;
+  border: solid black 3px;
+  border-radius: .25rem;
+}
+
+.textArea:hover {
+  border: 3px solid rgb(100, 100, 100);
+}
+
 .leaveMeAMessage {
   font-size: 2.2em;
 }
 
 .inputArea {
-  width: 15vw;
-  height: 2vh;
+  width: 20vw;
+  height: 3vh;
+  border-radius: .25rem;
+  border: 3px solid black;
+  margin: .25%;
+}
+
+.inputArea:hover {
+  border: 3px solid rgb(100, 100, 100);
 }
 
 .buttonSpacingThree{
   height: 5vh;
   width: 7vw;
   font-size: .6em;
-  color: rgb(136, 132, 132);
-  background-color: white;
+  color: rgb(245, 243, 243);
+  background-color: rgb(136, 132, 132);
   margin-bottom: 0;
+  border-radius: .25rem;
+  border: none;
+}
+
+.buttonSpacingThree:hover {
+  transform: translateY(-.25vh);
+  background-color: rgb(151, 151, 151);
 }
 
 .contactPageDark {
@@ -80,19 +105,20 @@ body {
 }
 
 .buttonSpacingTwo{
-  margin-top: 3%;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: .7em;
-  width: 10vw;
   height: 5vh;
-  color: rgb(136, 132, 132);
-  border: 2px solid black;
+  width: 7vw;
+  font-size: 1.2em;
+  color: rgb(245, 243, 243);
+  background-color: rgb(136, 132, 132);
+  margin-bottom: 0;
+  border-radius: .25rem;
+  margin-top: 3%;
+  border: none;
 }
 
 .buttonSpacingTwo:hover {
-  animation-name: shadoweffect;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  transform: translateY(-.25vh);
+  background-color: rgb(151, 151, 151);
 }
 
 /* ***************************** End Of CONTACT PAGE ********************************* */
@@ -472,12 +498,20 @@ body {
   
   .buttonSpacingThree{
     height: 5vh;
-    width: 20vw;
+    width: 7vw;
     font-size: .6em;
-    color: rgb(136, 132, 132);
-    background-color: white;
+    color: rgb(245, 243, 243);
+    background-color: rgb(136, 132, 132);
     margin-bottom: 0;
+    border-radius: .25rem;
+    border: none;
   }
+  
+  .buttonSpacingThree:hover {
+    transform: translateY(-.25vh);
+    background-color: rgb(151, 151, 151);
+  }
+  
   .typewriter{
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid rgb(136, 132, 132); /* The typwriter cursor */
@@ -662,14 +696,20 @@ body {
 }
 
 .buttonSpacingTwo{
-  margin-top: 20%;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: .7em;
-  width: 20vw;
   height: 5vh;
-  background-color: white;
-  border-radius: 15;
-  color: rgb(136, 132, 132);
+  width: 7vw;
+  font-size: 1.2em;
+  color: rgb(245, 243, 243);
+  background-color: rgb(136, 132, 132);
+  margin-bottom: 0;
+  border-radius: .25rem;
+  margin-top: 3%;
+  border: none;
+}
+
+.buttonSpacingTwo:hover {
+  transform: translateY(-.25vh);
+  background-color: rgb(151, 151, 151);
 }
   
   /* ***************************** End Of CONTACT PAGE ********************************* */
