@@ -141,20 +141,22 @@ import TwitterProject from './twitterProject'
     )
   } else if (gate === '2'){
     myInitialRender = (
-        <div className={`${secondPage}`}>
-        <h1 className='leaveMeAMessage'>Leave Me A Message!</h1>
-        <SEO title="Contact Page" />
-          <form onSubmit={submitForm} action="https://formspree.io/meqelkae" method="POST" className='myContactForm'>
-            <label>Name:  </label>
-            <input type="text" name="name" className='inputArea'/><br />
-            <label>Email:  </label>
-            <input type="email" name="email" className='inputArea'/><br />
-            <label>Message:</label>
-            <textarea type="text" name="message" className='textArea'></textarea><br />
-            {status === "SUCCESS" ? <p>Thanks!</p> : <button className='buttonSpacingThree' onClick={buttonSubmitted}>{responseText}</button>}
-            {status === "ERROR" && <p>Ooops! There was an error.</p>}
-          </form>
-        <button className='buttonSpacingTwo' onClick={handleChangeReturn}>Return</button>
+        <div className='contactPageDark'>
+          <div className='dark_overlay'>
+            <h1 className='leaveMeAMessage'>Drop Me a Line</h1>
+            <SEO title="Contact Page" />
+              <form onSubmit={submitForm} action="https://formspree.io/meqelkae" method="POST" className='myContactForm'>
+                <label>Name:  </label>
+                <input type="text" name="name" className='inputArea'/><br />
+                <label>Email:  </label>
+                <input type="email" name="email" className='inputArea'/><br />
+                <label>Message:</label>
+                <textarea type="text" name="message" className='textArea'></textarea><br />
+                {status === "SUCCESS" ? <p>Thanks!</p> : <button className='buttonSpacingThree' onClick={buttonSubmitted}>{responseText}</button>}
+                {status === "ERROR" && <p>Ooops! There was an error.</p>}
+                <button className='buttonSpacingThree' onClick={handleChangeReturn}>Return</button>
+              </form>
+          </div>
       </div>
     )
   }
