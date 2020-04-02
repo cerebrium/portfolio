@@ -890,7 +890,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .titleText {
-    font-size: 1em;
+    font-size: .9em;
   }
 
   .myContactForm{
