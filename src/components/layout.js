@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import Resume from '../images/ResumeHuman.pdf'
+import Resume from '../images/Resume.pdf'
 import { Link } from 'gatsby'
 import "./layout.css"
 import SEO from './seo'
