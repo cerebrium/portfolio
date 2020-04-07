@@ -352,6 +352,10 @@ body {
   opacity: .8;
 }
 
+.imagePicture {
+  height: 40vh
+}
+
 .imagePicture:hover {
   animation-name: shadoweffect;
   animation-duration: .5s;

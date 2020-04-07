@@ -9,15 +9,15 @@ import TwitterProject from './twitterProject'
 
 // Some state is giong on here
  export default () => {
-  const [ modeToggle, setModeToggle ] = useState('overallDiv')
+  const [ modeToggle, setModeToggle ] = useState('lightOverallDiv')
   const [ titleToggle, setTitleToggle ] = useState('titleText')
-  const [ titleToggleTwo, setTitleToggleTwo ] = useState('titleTextTwoDark')
-  const [ subTitleText, setSubTitleText ] = useState('subTitleTextDark')
-  const [ spaceMeTop, setSpaceMeTop ] = useState('spaceMePleaseTopCurrDark')
+  const [ titleToggleTwo, setTitleToggleTwo ] = useState('titleTextTwo')
+  const [ subTitleText, setSubTitleText ] = useState('subTitleTexts')
+  const [ spaceMeTop, setSpaceMeTop ] = useState('spaceMePleaseTopCurr')
   const [ gate, setGate ] = useState('0')
   const [status, setStatus] = useState('')
   const [ secondPage, setSecondPage ] = useState('contactPageDark')
-  const [toggleSun, setToggleSun ] = useState('fas fa-sun')
+  const [toggleSun, setToggleSun ] = useState('fas fa-moon')
   const [ responseText, setResponseText ] = useState('Submit')
 
   const submitForm = (ev) => {
@@ -95,7 +95,7 @@ import TwitterProject from './twitterProject'
         <div className='headerClass'>
           <div className='whiteBoxTop'>
               <div className='spacerDiv'></div>
-              <h2 className={`${titleToggle}`}>Nicholas Shankland | <span className='frontEndDeveloper'>Front End Developer</span></h2>
+              <h2 className={`${titleToggle}`}>Nicholas Shankland <span className='frontEndDeveloper'>| Front End Developer</span></h2>
               <h4 className='spaceMePleaseTopText'>Visual design solutions and react lover. I enjoy working on projects with people and <br />companies 
                 interested in finding the most visually appealing and intuitive solutions.</h4>
               <div className='favicons'>
@@ -114,17 +114,17 @@ import TwitterProject from './twitterProject'
             
             <h1 className={`${spaceMeTop}`}>Current Projects</h1>
             <div className='spaceMePlease'>
+                <DogProject />
+              <div className='sideText spaceTheText'>
+                <h1 className={`${subTitleText}`}>Dave Designs</h1>
+                <h4 className='spaceTheText'>Uses Gatsby to show a companies designs and products. Full netlify cms integration, can have the text edited by the client.</h4>
+              </div>
+            </div>
+            <div className='spaceMePlease'>
                 <ChemistryProject />
               <div className='sideText spaceTheText'>
                 <h1 className={`${subTitleText}`}>Bloggify</h1>
                 <h4 className='spaceTheText'>My Blog. Talks about places I have travelled, things I have eaten, and some programming things I have learned. </h4>
-              </div>
-            </div>
-            <div className='spaceMePlease'>
-                <DogProject />
-              <div className='sideText spaceTheText'>
-                <h1 className={`${subTitleText}`}>Amazon Services</h1>
-                <h4 className='spaceTheText'>Uses Gatsby to show a delivery service website for a company in the UK. Uses lazy loading imports for the images.</h4>
               </div>
             </div>
             <div className='spaceMePlease'>
