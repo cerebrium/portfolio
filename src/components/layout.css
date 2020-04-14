@@ -16,6 +16,7 @@ body {
 
 .textArea {
   width: 45vw;
+  padding: 5px;
   height: 30vh;
   border: solid rgb(70, 66, 199) 3px;
   border-radius: .25rem;
@@ -31,6 +32,7 @@ body {
 }
 
 .inputArea {
+  padding: 5px;
   width: 20vw;
   height: 3vh;
   border-radius: .25rem;
@@ -290,7 +292,8 @@ body {
 
 .spaceMePleaseTopText {
   margin-top: 0;
-  text-align: left;
+  width: 40vw;
+  text-align: center;
   color: rgb(136, 132, 132);
   font-family: 'Ubuntu', sans-serif;
 }
@@ -624,61 +627,61 @@ body {
   }
 
 .spaceMePleaseTopText {
-  text-align: center;
+  text-align: justify;
   color: white;
   margin-right: 12%;
   margin-left: 12%;
   margin-top: 3%;
 }
   
-  .contactPage {
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-    justify-content: center;
-    color: rgb(136, 132, 132);
-  }
-  
-  .myContactForm{
-    display: flex;
-    align-items: flex-start;
-    flex-flow: column;
-    justify-content: center;
-    color: rgb(245, 245, 245);
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 2em;
-  }
+.contactPage {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  color: rgb(136, 132, 132);
+}
 
-  .subTitleTextDark {
-    color: white;
-    font-size: 1.3em;
-    margin-bottom: 1%;
-  }
-  
-  .titleText {
-    color: white;
-    font-size: 2em;
-    margin-bottom: 1%;
-  }
-  
-  .titleTextTwoDark {
-    color: white;
-    margin-bottom: 1%;
-    font-size: 1.3em;
-  }
-  
-  .titleTextTwo {
-    color: white;
-    margin-bottom: 1%;
-    font-size: 1.3em;
-  }
-  
-  .titleTextDark {
-    color: white;
-    font-size: 1em;
-    margin-bottom: 1%;
-  }
-  
+.myContactForm{
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+  justify-content: center;
+  color: rgb(245, 245, 245);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2em;
+}
+
+.subTitleTextDark {
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: 1%;
+}
+
+.titleText {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 1%;
+}
+
+.titleTextTwoDark {
+  color: white;
+  margin-bottom: 1%;
+  font-size: 1.3em;
+}
+
+.titleTextTwo {
+  color: white;
+  margin-bottom: 1%;
+  font-size: 1.3em;
+}
+
+.titleTextDark {
+  color: white;
+  font-size: 1em;
+  margin-bottom: 1%;
+}
+
 .linkStyles {
   text-decoration: none;
   color: white;
@@ -864,13 +867,13 @@ body {
       background-color: rgb(214, 214, 214);
     }
     100% {
-      background-color: white;
+      background-color: rgb(233, 235, 236)
     }
   }
   
   @keyframes changeToDark {
     0% {
-      background-color: white;
+      background-color: rgb(233, 235, 236)
     } 
     25% {
       background-color: rgb(207, 207, 207);
@@ -899,12 +902,35 @@ body {
 
   .myContactForm{
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-flow: column;
     justify-content: center;
     color: rgb(245, 245, 245);
     font-family: 'Ubuntu', sans-serif;
     font-size: 2em;
+  }
+
+  .inputArea {
+    width: 50vw;
+    padding: 5px;
+  }
+
+  .buttonSpacingThree{
+    height: 5vh;
+    width: 45vw;
+    font-size: .6em;
+    color: rgb(245, 243, 243);
+    background-color: rgb(70, 66, 199);
+    margin-bottom: 0;
+    border-radius: .25rem;
+    border: none;
+    margin-bottom: 5vh;
+  }
+  
+  .buttonSpacingThree:hover {
+    transform: translateY(-.25vh);
+    background-color: rgb(255, 255, 255);
+    color: rgb(70, 66, 199);
   }
 }
 

@@ -96,7 +96,7 @@ import TwitterProject from './twitterProject'
           <div className='whiteBoxTop'>
               <div className='spacerDiv'></div>
               <h2 className={`${titleToggle}`}>Nicholas Shankland <span className='frontEndDeveloper'>| Front End Developer</span></h2>
-              <h4 className='spaceMePleaseTopText'>Visual design solutions and react lover. I enjoy working on projects with people and <br />companies 
+              <h4 className='spaceMePleaseTopText'>Visual design solutions and react lover. I enjoy working on projects with people and companies 
                 interested in finding the most visually appealing and intuitive solutions.</h4>
               <div className='favicons'>
                 <i class="fas fa-envelope" id='topEmail' onClick={handleChangeReturn}></i>
