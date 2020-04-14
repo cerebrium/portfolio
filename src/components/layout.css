@@ -627,6 +627,7 @@ body {
   }
 
 .spaceMePleaseTopText {
+  width: 80vw;
   text-align: center;
   color: white;
   margin-right: 12%;
