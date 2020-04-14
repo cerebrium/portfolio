@@ -13,6 +13,13 @@ body {
   color: rgb(136, 132, 132);
   font-family: 'Ubuntu', sans-serif;
 }
+/* 
+.darkLoadOverlay {
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  background-color: #000;
+} */
 
 .textArea {
   width: 45vw;
@@ -144,6 +151,11 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+.darkLoadOverlay {
+  background-color: #000;
+  z-index: 1;
+}
+
 .fab {
   font-size: 3em;
   color: rgb(136, 132, 132);
@@ -157,14 +169,14 @@ body {
 
 .overallDiv {
   animation-name: changeToDark;
-  animation-duration: .4s;
+  animation-duration: .2s;
   animation-fill-mode: forwards;
   font-family: 'Ubuntu', sans-serif;
 }
 
 .lightOverallDiv {
   animation-name: changeToWhite;
-  animation-duration: .4s;
+  animation-duration: .01s;
   animation-fill-mode: forwards;
   font-family: 'Ubuntu', sans-serif;
 }
