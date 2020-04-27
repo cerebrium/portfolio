@@ -934,6 +934,10 @@ html {
     font-size: .9em;
   }
 
+  .titleTextDark {
+    font-size: .9em;
+  }
+
   .myContactForm{
     display: flex;
     align-items: left;
