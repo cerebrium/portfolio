@@ -147,14 +147,14 @@ import TwitterProject from './twitterProject'
             <SEO title="Contact Page" />
               <form onSubmit={submitForm} action="https://formspree.io/meqelkae" method="POST" className='myContactForm'>
                 <label>Name:  </label>
-                <input type="text" name="name" className='inputArea'/><br />
+                <input type="text" name="name" className='inputArea' required/><br />
                 <label>Email:  </label>
-                <input type="email" name="email" className='inputArea'/><br />
+                <input type="email" name="email" className='inputArea' required/><br />
                 <label>Message:</label>
-                <textarea type="text" name="message" className='textArea'></textarea><br />
-                {status === "SUCCESS" ? <p>Thanks!</p> : <button className='buttonSpacingThree' onClick={buttonSubmitted}>{responseText}</button>}
+                <textarea type="text" name="message" className='textArea' required></textarea><br />
+                {status === "SUCCESS" ? <p>Thanks!</p> : <button className='buttonSpacingThree' name='button1' onClick={buttonSubmitted}>{responseText}</button>}
                 {status === "ERROR" && <p>Ooops! There was an error.</p>}
-                <button className='buttonSpacingThree' onClick={handleChangeReturn}>Return</button>
+                <button className='buttonSpacingThree' name='button2' onClick={handleChangeReturn}>Return</button>
               </form>
           </div>
       </div>
