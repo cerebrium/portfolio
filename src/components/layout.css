@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 7px;
@@ -538,7 +542,7 @@ body {
   }
   
   .typewriter{
-    font-size: 70%;
+    font-size: 90%;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid rgb(136, 132, 132); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
@@ -650,9 +654,10 @@ body {
   }
 
 .spaceMePleaseTopText {
-  width: 80vw;
+  width: 60vw;
   text-align: center;
   color: white;
+  color: rgb(136, 132, 132);
   margin-right: 12%;
   margin-left: 12%;
   margin-top: 3%;
@@ -702,7 +707,7 @@ body {
 
 .titleTextDark {
   color: white;
-  font-size: 1em;
+  font-size: 2em;
   margin-bottom: 1%;
 }
 
@@ -918,6 +923,11 @@ body {
   .titleText {
     font-size: 1.5em;
   }
+
+  .titleTextDark {
+    font-size: 1.5em;
+  }
+
 }
 @media only screen and (max-width: 600px) {
   .titleText {
